@@ -1,0 +1,75 @@
+# This file tells Git which files and directories to ignore.
+
+# 1. Virtual Environment
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# 2. Data
+# Raw data, processed data, and ground truth files.
+# It's generally best not to commit large datasets or sensitive financial data.
+data/
+datasets/
+transcripts/
+ground_truth.json
+ground_truth.csv
+
+# 3. API Keys and Sensitive Information
+# Files containing API keys, credentials, or other secrets.
+# Never commit your API keys!
+*.env
+.env
+config.json
+secrets.py
+api_keys.json
+
+# 4. Python-specific files
+# Byte-compiled and temporary files
+__pycache__/
+*.py[co]
+*.egg-info/
+
+# 5. Notebook Checkpoints
+# Jupyter notebooks often create these temporary files.
+.ipynb_checkpoints/
+
+# 6. Evaluation Outputs
+# Output files from your experiments and evaluation scripts.
+evaluation_results/
+results.json
+results.csv
+metrics.json
+tables/
+charts/
+
+# 7. LangChain & LLM specific files
+# Cache files or generated artifacts from LangChain or LLMs.
+# This could include files for vector stores like Chroma or FAISS.
+chroma_db/
+faiss_index/
+vectorstore/
+embeddings/
+llm_cache/
+
+# 8. Logs
+# Log files generated during script execution.
+*.log
+logs/
+
+# 9. Operating System and Editor Files
+# Files created by various operating systems and development environments.
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# 10. Deployment-related files (if any)
+# Temporary build files or deployment artifacts.
+dist/
+build/
+*.whl
+
+# 11. Practice
+Practice /
