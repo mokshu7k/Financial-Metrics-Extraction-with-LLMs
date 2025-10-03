@@ -15,6 +15,8 @@ transcripts/
 ground_truth.json
 ground_truth.csv
 
+
+simple_chat.py
 # 3. API Keys and Sensitive Information
 # Files containing API keys, credentials, or other secrets.
 # Never commit your API keys!
@@ -54,8 +56,8 @@ llm_cache/
 
 # 8. Logs
 # Log files generated during script execution.
-*.log
-logs/
+# *.log
+# logs/
 
 # 9. Operating System and Editor Files
 # Files created by various operating systems and development environments.
@@ -72,4 +74,4 @@ build/
 *.whl
 
 # 11. Practice
-Practice /
+Practice/
