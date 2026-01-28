@@ -1,0 +1,84 @@
+{
+  "method": "rag",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2025-10-12T12:09:52.368456",
+  "retrieval": {
+    "num_contexts": 1,
+    "top_scores": [
+      0.3675571084022522
+    ],
+    "retrieval_time_seconds": 0.028353371428571424,
+    "contexts_used": [
+      {
+        "chunk_id": "BRITANNIA_Q2_2024_transcript_chunk_26",
+        "score": 0.3675571084022522,
+        "section_type": "management_discussion"
+      }
+    ]
+  },
+  "extraction": {
+    "company": "BRITANNIA",
+    "quarter": "Q2",
+    "year": 2024,
+    "extraction_metadata": {
+      "num_contexts_analyzed": 1,
+      "section_types_covered": [
+        "management_discussion"
+      ],
+      "confidence": "medium"
+    },
+    "commentary": {
+      "revenue_performance": {
+        "summary": "No explicit commentary on revenue performance found in the provided context.",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "profitability": {
+        "summary": "Management was asked about EBITDA margin trajectory and risks, but did not provide specific guidance.",
+        "key_points": [
+          "Management does not give guidance on EBITDA margins.",
+          "Employee cost reduction was mentioned as a factor."
+        ],
+        "source_contexts": [
+          1
+        ]
+      },
+      "business_outlook": {
+        "summary": "No explicit commentary on business outlook found in the provided context, but management was asked about guidance for FY '24.",
+        "key_points": [
+          "Management does not give guidance.",
+          "Focus state growth has come down."
+        ],
+        "source_contexts": [
+          1
+        ]
+      },
+      "key_challenges": {
+        "summary": "No explicit commentary on key challenges found in the provided context, but employee cost reduction was mentioned as a potential risk for EBITDA margin trajectory.",
+        "key_points": [
+          "Employee cost reduction was mentioned as a potential risk."
+        ],
+        "source_contexts": [
+          1
+        ]
+      },
+      "strategic_initiatives": {
+        "summary": "No explicit commentary on strategic initiatives found in the provided context.",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "market_conditions": {
+        "summary": "No explicit commentary on market conditions found in the provided context.",
+        "key_points": [],
+        "source_contexts": []
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 829,
+    "completion_tokens": 402,
+    "total_tokens": 1231,
+    "cost_usd": 0.0008066900000000001,
+    "latency_seconds": 5.97903
+  }
+}

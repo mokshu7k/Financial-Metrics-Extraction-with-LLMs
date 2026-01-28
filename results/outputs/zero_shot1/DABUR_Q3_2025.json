@@ -1,0 +1,63 @@
+{
+  "method": "zero_shot",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2025-10-05T19:08:14.415113",
+  "extraction": {
+    "company": "DABUR",
+    "quarter": "Q3",
+    "year": 2025,
+    "metrics": {
+      "revenue_from_operations": {
+        "value": 3355.25,
+        "unit": "crores"
+      },
+      "total_income": {
+        "value": 3483.28,
+        "unit": "crores"
+      },
+      "net_profit": {
+        "value": 515.82,
+        "unit": "crores"
+      },
+      "basic_eps": {
+        "value": 2.95,
+        "unit": "INR"
+      },
+      "total_assets": {
+        "value": 16113.11,
+        "unit": "crores"
+      },
+      "total_liabilities": {
+        "value": 5244.39,
+        "unit": "crores"
+      },
+      "interim_equity_dividend": {
+        "value": 2.75,
+        "unit": "INR per share"
+      },
+      "gross_margin": {
+        "value": "Not Available",
+        "unit": "%"
+      },
+      "operating_margin": {
+        "value": 20.32,
+        "unit": "%"
+      },
+      "foods_business_revenue": {
+        "value": 429.55,
+        "unit": "crores"
+      },
+      "premium_personal_care_contribution": {
+        "value": "Not Available",
+        "unit": "crores"
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 6677,
+    "completion_tokens": 268,
+    "total_tokens": 6945,
+    "cost_usd": 0.0105515,
+    "latency_seconds": 35.28216
+  }
+}

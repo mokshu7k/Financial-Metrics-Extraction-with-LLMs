@@ -1,0 +1,79 @@
+{
+  "method": "rag",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2025-10-12T12:10:03.196857",
+  "retrieval": {
+    "num_contexts": 1,
+    "top_scores": [
+      0.4776674509048462
+    ],
+    "retrieval_time_seconds": 0.028228972972972964,
+    "contexts_used": [
+      {
+        "chunk_id": "BRITANNIA_Q3_2024_transcript_chunk_14",
+        "score": 0.4776674509048462,
+        "section_type": null
+      }
+    ]
+  },
+  "extraction": {
+    "company": "BRITANNIA",
+    "quarter": "Q3",
+    "year": 2024,
+    "extraction_metadata": {
+      "num_contexts_analyzed": 1,
+      "section_types_covered": [
+        "None"
+      ],
+      "confidence": "low"
+    },
+    "commentary": {
+      "revenue_performance": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "profitability": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "business_outlook": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "key_challenges": {
+        "summary": "Improvement needed in CDP scores",
+        "key_points": [
+          "CDP Climate Change Scores improved from C to B, but aim to be A"
+        ],
+        "source_contexts": [
+          1
+        ]
+      },
+      "strategic_initiatives": {
+        "summary": "ESG construct with four pillars: growth, governance, resources, and people",
+        "key_points": [
+          "Campaign 'Har Pocket Dustbin' to prevent littering in public spaces",
+          "Data management tool implementation"
+        ],
+        "source_contexts": [
+          1
+        ]
+      },
+      "market_conditions": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 815,
+    "completion_tokens": 379,
+    "total_tokens": 1194,
+    "cost_usd": 0.0007802600000000001,
+    "latency_seconds": 6.002004
+  }
+}

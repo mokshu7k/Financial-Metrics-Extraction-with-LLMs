@@ -1,0 +1,68 @@
+{
+  "method": "chain_of_thought",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2025-10-12T11:57:37.224582",
+  "reasoning": "**Step 1: Identify Document Structure**\nThis document appears to be a quarterly financial results statement for Dabur India Limited, containing various sections such as the auditor's review report, consolidated financial results, segment-wise revenue and results, and additional disclosures.\n\n**Step 2: Extract Core Financial Metrics**\n\n1. Revenue from operations\n   - Look for: \"Revenue from operations\"\n   - Location in document: Statement of unaudited consolidated financial results for the quarter ended 30 June 2024, Particulars: 1 Income, Revenue from operations\n   - Value found: 3349.11 (in crores)\n\n2. Net profit for the period\n   - Look for: \"Net profit for the period/year\"\n   - Location: Statement of unaudited consolidated financial results for the quarter ended 30 June 2024, Particulars: 8 Net profit for the period/year\n   - Value: 494.35 (in crores)\n\n3. Basic Earnings per share\n   - Look for: \"Basic EPS\"\n   - Location: Statement of unaudited consolidated financial results for the quarter ended 30 June 2024, Particulars: 13 [Earnings per share (Face value of ? 1 each) (not annualised), Basic (?)\n   - Value: 2.82\n\n4. Total assets\n   - Look for: Balance sheet section, \"Total assets\"\n   - Location: Unaudited consolidated segment wise revenue, results, assets and liabilities for the quarter ended 30 June 2024, Particulars: 3 Segment assets, Total\n   - Value: 15736.71 (in crores)\n\n5. Total liabilities\n   - Look for: Balance sheet section, \"Total liabilities\"\n   - Location: Unaudited consolidated segment wise revenue, results, assets and liabilities for the quarter ended 30 June 2024, Particulars: 4 Segment liabilities, Total\n   - Value: 4941.10 (in crores)\n\n6. Margins (if calculable or stated)\n   - Operating Margin: 19.56% (found in Additional disclosures as per regulation 52(4) of Securities & Exchange Board of India, Particulars: (q) Operating margin (in %))\n   - Net profit margin: 14.76% (found in Additional disclosures as per regulation 52(4) of Securities & Exchange Board of India, Particulars: (r) Net profit margin (in %))\n\n7. Business segment metrics (if available)\n   - Foods Business Revenue: 703.19 (in crores), found in Unaudited consolidated segment wise revenue, results, assets and liabilities for the quarter ended 30 June 2024, Particulars: 1 Segment revenue, B. Food business\n\n**Step 3: Verify and Cross-check**\nThe numbers appear to be logically consistent, with units being in crores for financial metrics and percentages for margins. There are no obvious errors or misreadings.\n\n**Step 4: Final Output**\nHere are the extracted metrics in JSON format:\n\n```json",
+  "extraction": {
+    "company": "DABUR",
+    "quarter": "Q1",
+    "year": 2025,
+    "reasoning": {
+      "document_type": "Quarterly financial results statement",
+      "key_sections_found": [
+        "Statement of unaudited consolidated financial results",
+        "Unaudited consolidated segment wise revenue, results, assets and liabilities"
+      ],
+      "confidence": "high"
+    },
+    "metrics": {
+      "revenue_from_operations": {
+        "value": 3349.11,
+        "unit": "crores",
+        "source": "Statement of unaudited consolidated financial results"
+      },
+      "net_profit": {
+        "value": 494.35,
+        "unit": "crores",
+        "source": "Statement of unaudited consolidated financial results"
+      },
+      "basic_eps": {
+        "value": 2.82,
+        "unit": "rupees",
+        "source": "Statement of unaudited consolidated financial results"
+      },
+      "total_assets": {
+        "value": 15736.71,
+        "unit": "crores",
+        "source": "Unaudited consolidated segment wise revenue, results, assets and liabilities"
+      },
+      "total_liabilities": {
+        "value": 4941.1,
+        "unit": "crores",
+        "source": "Unaudited consolidated segment wise revenue, results, assets and liabilities"
+      },
+      "operating_margin": {
+        "value": 19.56,
+        "unit": "%",
+        "source": "Additional disclosures as per regulation 52(4) of Securities & Exchange Board of India"
+      },
+      "net_profit_margin": {
+        "value": 14.76,
+        "unit": "%",
+        "source": "Additional disclosures as per regulation 52(4) of Securities & Exchange Board of India"
+      },
+      "foods_business_revenue": {
+        "value": 703.19,
+        "unit": "crores",
+        "source": "Unaudited consolidated segment wise revenue, results, assets and liabilities"
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 6627,
+    "completion_tokens": 1042,
+    "total_tokens": 7669,
+    "cost_usd": 0.0047331100000000004,
+    "latency_seconds": 37.258949
+  }
+}

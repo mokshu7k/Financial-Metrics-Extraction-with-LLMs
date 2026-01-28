@@ -1,0 +1,79 @@
+{
+  "method": "rag",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2025-10-12T12:10:14.204180",
+  "retrieval": {
+    "num_contexts": 1,
+    "top_scores": [
+      0.38172686100006104
+    ],
+    "retrieval_time_seconds": 0.02781320512820512,
+    "contexts_used": [
+      {
+        "chunk_id": "BRITANNIA_Q4_2024_transcript_chunk_17",
+        "score": 0.38172686100006104,
+        "section_type": null
+      }
+    ]
+  },
+  "extraction": {
+    "company": "BRITANNIA",
+    "quarter": "Q4",
+    "year": 2024,
+    "extraction_metadata": {
+      "num_contexts_analyzed": 1,
+      "section_types_covered": [
+        "None"
+      ],
+      "confidence": "low"
+    },
+    "commentary": {
+      "revenue_performance": {
+        "summary": "No explicit information on revenue performance is provided in the given context.",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "profitability": {
+        "summary": "No explicit information on profitability is provided in the given context.",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "business_outlook": {
+        "summary": "The company is hoping to replicate its strong business in Nepal in more countries as they go forward.",
+        "key_points": [
+          "Replicating the Nepal business model in other countries"
+        ],
+        "source_contexts": [
+          1
+        ]
+      },
+      "key_challenges": {
+        "summary": "No explicit information on key challenges is provided in the given context.",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "strategic_initiatives": {
+        "summary": "The company has a cost efficiency program in place, focusing on areas such as truck utilization, distance travelled by products, market damages, renewable energy, fuel consumption, and line throughputs in plants.",
+        "key_points": [
+          "Cost efficiency program",
+          "Focus on ESG"
+        ],
+        "source_contexts": [
+          1
+        ]
+      },
+      "market_conditions": {
+        "summary": "No explicit information on market conditions is provided in the given context.",
+        "key_points": [],
+        "source_contexts": []
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 817,
+    "completion_tokens": 441,
+    "total_tokens": 1258,
+    "cost_usd": 0.0008304200000000001,
+    "latency_seconds": 6.11601
+  }
+}

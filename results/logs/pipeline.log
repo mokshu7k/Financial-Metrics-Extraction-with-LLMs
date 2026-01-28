@@ -1,0 +1,313 @@
+2025-10-05 17:52:36,420 - src.data_preprocessing.text_cleaning - INFO - Starting financial text preprocessing pipeline...
+2025-10-05 17:52:36,420 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q1 2024.pdf
+2025-10-05 17:52:41,049 - src.utils.helpers - INFO - extract_pdf_text took 4.63 seconds
+2025-10-05 17:52:41,054 - src.utils.helpers - INFO - process_document took 4.63 seconds
+2025-10-05 17:52:41,054 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q1 2025.pdf
+2025-10-05 17:52:44,695 - src.utils.helpers - INFO - extract_pdf_text took 3.64 seconds
+2025-10-05 17:52:44,714 - src.utils.helpers - INFO - process_document took 3.66 seconds
+2025-10-05 17:52:44,715 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q2 2024.pdf
+2025-10-05 17:52:50,867 - src.utils.helpers - INFO - extract_pdf_text took 6.15 seconds
+2025-10-05 17:52:50,898 - src.utils.helpers - INFO - process_document took 6.18 seconds
+2025-10-05 17:52:50,898 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q2 2025.pdf
+2025-10-05 17:52:56,358 - src.utils.helpers - INFO - extract_pdf_text took 5.46 seconds
+2025-10-05 17:52:56,375 - src.utils.helpers - INFO - process_document took 5.48 seconds
+2025-10-05 17:52:56,376 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q3 2024.pdf
+2025-10-05 17:53:01,024 - src.utils.helpers - INFO - extract_pdf_text took 4.65 seconds
+2025-10-05 17:53:01,041 - src.utils.helpers - INFO - process_document took 4.66 seconds
+2025-10-05 17:53:01,041 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q3 2025.pdf
+2025-10-05 17:53:05,196 - src.utils.helpers - INFO - extract_pdf_text took 4.15 seconds
+2025-10-05 17:53:05,210 - src.utils.helpers - INFO - process_document took 4.17 seconds
+2025-10-05 17:53:05,211 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q4 2024.pdf
+2025-10-05 17:53:12,710 - src.utils.helpers - INFO - extract_pdf_text took 7.50 seconds
+2025-10-05 17:53:12,742 - src.utils.helpers - INFO - process_document took 7.53 seconds
+2025-10-05 17:53:12,742 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q4 2025.pdf
+2025-10-05 17:53:18,758 - src.utils.helpers - INFO - extract_pdf_text took 6.02 seconds
+2025-10-05 17:53:18,796 - src.utils.helpers - INFO - process_document took 6.05 seconds
+2025-10-05 17:53:18,796 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q1 2024.pdf
+2025-10-05 17:53:20,599 - src.utils.helpers - INFO - extract_pdf_text took 1.80 seconds
+2025-10-05 17:53:20,601 - src.utils.helpers - INFO - process_document took 1.81 seconds
+2025-10-05 17:53:20,601 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q1 2025.pdf
+2025-10-05 17:53:23,899 - src.utils.helpers - INFO - extract_pdf_text took 3.30 seconds
+2025-10-05 17:53:23,899 - src.utils.helpers - INFO - process_document took 3.30 seconds
+2025-10-05 17:53:23,914 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q2 2024.pdf
+2025-10-05 17:53:26,556 - src.utils.helpers - INFO - extract_pdf_text took 2.64 seconds
+2025-10-05 17:53:26,573 - src.utils.helpers - INFO - process_document took 2.66 seconds
+2025-10-05 17:53:26,573 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q2 2025.pdf
+2025-10-05 17:53:29,707 - src.utils.helpers - INFO - extract_pdf_text took 3.13 seconds
+2025-10-05 17:53:29,723 - src.utils.helpers - INFO - process_document took 3.15 seconds
+2025-10-05 17:53:29,724 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q3 2024.pdf
+2025-10-05 17:53:31,617 - src.utils.helpers - INFO - extract_pdf_text took 1.89 seconds
+2025-10-05 17:53:31,617 - src.utils.helpers - INFO - process_document took 1.89 seconds
+2025-10-05 17:53:31,617 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q3 2025.pdf
+2025-10-05 17:53:33,648 - src.utils.helpers - INFO - extract_pdf_text took 2.03 seconds
+2025-10-05 17:53:33,664 - src.utils.helpers - INFO - process_document took 2.05 seconds
+2025-10-05 17:53:33,664 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q4 2024.pdf
+2025-10-05 17:53:36,898 - src.utils.helpers - INFO - extract_pdf_text took 3.23 seconds
+2025-10-05 17:53:36,922 - src.utils.helpers - INFO - process_document took 3.26 seconds
+2025-10-05 17:53:36,922 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q4 2025.pdf
+2025-10-05 17:53:40,179 - src.utils.helpers - INFO - extract_pdf_text took 3.26 seconds
+2025-10-05 17:53:40,216 - src.utils.helpers - INFO - process_document took 3.29 seconds
+2025-10-05 17:53:40,217 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: MARICO q1 2024.pdf
+2025-10-05 17:53:57,945 - src.utils.helpers - INFO - extract_pdf_text took 17.73 seconds
+2025-10-05 17:53:57,964 - src.utils.helpers - INFO - process_document took 17.75 seconds
+2025-10-05 17:53:57,964 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: MARICO q1 2025.pdf
+2025-10-05 17:54:18,483 - src.utils.helpers - INFO - extract_pdf_text took 20.52 seconds
+2025-10-05 17:54:18,490 - src.utils.helpers - INFO - process_document took 20.53 seconds
+2025-10-05 17:54:18,491 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: MARICO q2 2024.pdf
+2025-10-05 17:54:27,886 - src.utils.helpers - INFO - extract_pdf_text took 9.40 seconds
+2025-10-05 17:54:27,897 - src.utils.helpers - INFO - process_document took 9.41 seconds
+2025-10-05 17:54:27,897 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: MARICO q2 2025.pdf
+2025-10-05 17:54:37,023 - src.utils.helpers - INFO - extract_pdf_text took 9.12 seconds
+2025-10-05 17:54:37,038 - src.utils.helpers - INFO - process_document took 9.14 seconds
+2025-10-05 17:54:37,038 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: MARICO q3 2024.pdf
+2025-10-05 17:54:44,398 - src.utils.helpers - INFO - extract_pdf_text took 7.36 seconds
+2025-10-05 17:54:44,420 - src.utils.helpers - INFO - process_document took 7.38 seconds
+2025-10-05 17:54:44,420 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: MARICO q3 2025.pdf
+2025-10-05 17:54:51,867 - src.utils.helpers - INFO - extract_pdf_text took 7.45 seconds
+2025-10-05 17:54:51,882 - src.utils.helpers - INFO - process_document took 7.46 seconds
+2025-10-05 17:54:51,882 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: MARICO q4 2024.pdf
+2025-10-05 17:54:59,555 - src.utils.helpers - INFO - extract_pdf_text took 7.67 seconds
+2025-10-05 17:54:59,570 - src.utils.helpers - INFO - process_document took 7.69 seconds
+2025-10-05 17:54:59,570 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: MARICO q4 2025.pdf
+2025-10-05 17:55:09,617 - src.utils.helpers - INFO - extract_pdf_text took 10.05 seconds
+2025-10-05 17:55:09,644 - src.utils.helpers - INFO - process_document took 10.07 seconds
+2025-10-05 17:55:09,644 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: TATACONSUM q1 2024.pdf
+2025-10-05 17:55:10,570 - src.utils.helpers - INFO - extract_pdf_text took 0.93 seconds
+2025-10-05 17:55:10,570 - src.utils.helpers - INFO - process_document took 0.93 seconds
+2025-10-05 17:55:10,570 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: TATACONSUM q1 2025.pdf
+2025-10-05 17:55:14,945 - src.utils.helpers - INFO - extract_pdf_text took 4.37 seconds
+2025-10-05 17:55:14,945 - src.utils.helpers - INFO - process_document took 4.37 seconds
+2025-10-05 17:55:14,945 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: TATACONSUM q2 2024.pdf
+2025-10-05 17:55:15,367 - src.utils.helpers - INFO - extract_pdf_text took 0.42 seconds
+2025-10-05 17:55:15,367 - src.utils.helpers - INFO - process_document took 0.42 seconds
+2025-10-05 17:55:15,367 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: TATACONSUM q2 2025.pdf
+2025-10-05 17:55:19,290 - src.utils.helpers - INFO - extract_pdf_text took 3.92 seconds
+2025-10-05 17:55:19,310 - src.utils.helpers - INFO - process_document took 3.94 seconds
+2025-10-05 17:55:19,311 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: TATACONSUM q3 2024.pdf
+2025-10-05 17:55:21,117 - src.utils.helpers - INFO - extract_pdf_text took 1.81 seconds
+2025-10-05 17:55:21,132 - src.utils.helpers - INFO - process_document took 1.82 seconds
+2025-10-05 17:55:21,132 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: TATACONSUM q3 2025.pdf
+2025-10-05 17:55:21,570 - src.utils.helpers - INFO - extract_pdf_text took 0.44 seconds
+2025-10-05 17:55:21,570 - src.utils.helpers - INFO - process_document took 0.44 seconds
+2025-10-05 17:55:21,570 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: TATACONSUM q4 2024.pdf
+2025-10-05 17:55:22,681 - src.utils.helpers - INFO - extract_pdf_text took 1.11 seconds
+2025-10-05 17:55:22,686 - src.utils.helpers - INFO - process_document took 1.12 seconds
+2025-10-05 17:55:22,686 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: TATACONSUM q4 2025.pdf
+2025-10-05 17:55:27,804 - src.utils.helpers - INFO - extract_pdf_text took 5.12 seconds
+2025-10-05 17:55:27,827 - src.utils.helpers - INFO - process_document took 5.14 seconds
+2025-10-05 17:55:27,831 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q1 2024.pdf
+2025-10-05 17:55:30,890 - src.utils.helpers - INFO - extract_pdf_text took 3.06 seconds
+2025-10-05 17:55:30,903 - src.utils.helpers - INFO - process_document took 3.07 seconds
+2025-10-05 17:55:30,903 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q1 2025.pdf
+2025-10-05 17:55:34,648 - src.utils.helpers - INFO - extract_pdf_text took 3.74 seconds
+2025-10-05 17:55:34,664 - src.utils.helpers - INFO - process_document took 3.76 seconds
+2025-10-05 17:55:34,664 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q2 2024.pdf
+2025-10-05 17:55:37,648 - src.utils.helpers - INFO - extract_pdf_text took 2.98 seconds
+2025-10-05 17:55:37,648 - src.utils.helpers - INFO - process_document took 2.98 seconds
+2025-10-05 17:55:37,648 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q2 2025.pdf
+2025-10-05 17:55:40,851 - src.utils.helpers - INFO - extract_pdf_text took 3.19 seconds
+2025-10-05 17:55:40,867 - src.utils.helpers - INFO - process_document took 3.20 seconds
+2025-10-05 17:55:40,868 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q3 2024.pdf
+2025-10-05 17:55:44,226 - src.utils.helpers - INFO - extract_pdf_text took 3.36 seconds
+2025-10-05 17:55:44,249 - src.utils.helpers - INFO - process_document took 3.38 seconds
+2025-10-05 17:55:44,249 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q3 2025.pdf
+2025-10-05 17:55:47,409 - src.utils.helpers - INFO - extract_pdf_text took 3.16 seconds
+2025-10-05 17:55:47,409 - src.utils.helpers - INFO - process_document took 3.16 seconds
+2025-10-05 17:55:47,409 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q4 2024.pdf
+2025-10-05 17:55:50,825 - src.utils.helpers - INFO - extract_pdf_text took 3.42 seconds
+2025-10-05 17:55:50,834 - src.utils.helpers - INFO - process_document took 3.43 seconds
+2025-10-05 17:55:50,835 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q4 2025.pdf
+2025-10-05 17:55:54,140 - src.utils.helpers - INFO - extract_pdf_text took 3.30 seconds
+2025-10-05 17:55:54,154 - src.utils.helpers - INFO - process_document took 3.32 seconds
+2025-10-05 17:55:54,154 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q1 2024.pdf
+2025-10-05 17:55:58,303 - src.utils.helpers - INFO - extract_pdf_text took 4.15 seconds
+2025-10-05 17:55:58,306 - src.utils.helpers - INFO - process_document took 4.15 seconds
+2025-10-05 17:55:58,306 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q1 2025.pdf
+2025-10-05 17:56:02,820 - src.utils.helpers - INFO - extract_pdf_text took 4.51 seconds
+2025-10-05 17:56:02,833 - src.utils.helpers - INFO - process_document took 4.53 seconds
+2025-10-05 17:56:02,834 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q2 2024.pdf
+2025-10-05 17:56:05,260 - src.utils.helpers - INFO - extract_pdf_text took 2.43 seconds
+2025-10-05 17:56:05,269 - src.utils.helpers - INFO - process_document took 2.43 seconds
+2025-10-05 17:56:05,270 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q2 2025.pdf
+2025-10-05 17:56:09,726 - src.utils.helpers - INFO - extract_pdf_text took 4.46 seconds
+2025-10-05 17:56:09,753 - src.utils.helpers - INFO - process_document took 4.48 seconds
+2025-10-05 17:56:09,753 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q3 2024.pdf
+2025-10-05 17:56:13,394 - src.utils.helpers - INFO - extract_pdf_text took 3.64 seconds
+2025-10-05 17:56:13,399 - src.utils.helpers - INFO - process_document took 3.64 seconds
+2025-10-05 17:56:13,399 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q3 2025.pdf
+2025-10-05 17:56:17,476 - src.utils.helpers - INFO - extract_pdf_text took 4.08 seconds
+2025-10-05 17:56:17,476 - src.utils.helpers - INFO - process_document took 4.08 seconds
+2025-10-05 17:56:17,476 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q4 2024.pdf
+2025-10-05 17:56:22,390 - src.utils.helpers - INFO - extract_pdf_text took 4.91 seconds
+2025-10-05 17:56:22,390 - src.utils.helpers - INFO - process_document took 4.91 seconds
+2025-10-05 17:56:22,390 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q4 2025.pdf
+2025-10-05 17:56:25,195 - src.utils.helpers - INFO - extract_pdf_text took 2.81 seconds
+2025-10-05 17:56:25,214 - src.utils.helpers - INFO - process_document took 2.82 seconds
+2025-10-05 17:56:25,215 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: MARICO q1 2024.pdf
+2025-10-05 17:56:29,993 - src.utils.helpers - INFO - extract_pdf_text took 4.78 seconds
+2025-10-05 17:56:30,004 - src.utils.helpers - INFO - process_document took 4.79 seconds
+2025-10-05 17:56:30,005 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: MARICO q2 2024.pdf
+2025-10-05 17:56:35,196 - src.utils.helpers - INFO - extract_pdf_text took 5.19 seconds
+2025-10-05 17:56:35,207 - src.utils.helpers - INFO - process_document took 5.20 seconds
+2025-10-05 17:56:35,207 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: MARICO q2 2025.pdf
+2025-10-05 17:56:40,820 - src.utils.helpers - INFO - extract_pdf_text took 5.61 seconds
+2025-10-05 17:56:40,844 - src.utils.helpers - INFO - process_document took 5.64 seconds
+2025-10-05 17:56:40,845 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: MARICO q3 2024.pdf
+2025-10-05 17:56:45,289 - src.utils.helpers - INFO - extract_pdf_text took 4.44 seconds
+2025-10-05 17:56:45,305 - src.utils.helpers - INFO - process_document took 4.46 seconds
+2025-10-05 17:56:45,306 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: MARICO q3 2025.pdf
+2025-10-05 17:56:49,851 - src.utils.helpers - INFO - extract_pdf_text took 4.54 seconds
+2025-10-05 17:56:49,851 - src.utils.helpers - INFO - process_document took 4.54 seconds
+2025-10-05 17:56:49,851 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: MARICO q4 2024.pdf
+2025-10-05 17:56:54,898 - src.utils.helpers - INFO - extract_pdf_text took 5.05 seconds
+2025-10-05 17:56:54,924 - src.utils.helpers - INFO - process_document took 5.07 seconds
+2025-10-05 17:56:54,924 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: MARICO q4 2025.pdf
+2025-10-05 17:57:00,445 - src.utils.helpers - INFO - extract_pdf_text took 5.52 seconds
+2025-10-05 17:57:00,463 - src.utils.helpers - INFO - process_document took 5.54 seconds
+2025-10-05 17:57:00,463 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: TATACONSUM q1 2024.pdf
+2025-10-05 17:57:04,690 - src.utils.helpers - INFO - extract_pdf_text took 4.23 seconds
+2025-10-05 17:57:04,696 - src.utils.helpers - INFO - process_document took 4.23 seconds
+2025-10-05 17:57:04,696 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: TATACONSUM q1 2025.pdf
+2025-10-05 17:57:08,538 - src.utils.helpers - INFO - extract_pdf_text took 3.84 seconds
+2025-10-05 17:57:08,538 - src.utils.helpers - INFO - process_document took 3.84 seconds
+2025-10-05 17:57:08,538 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: TATACONSUM q2 2024.pdf
+2025-10-05 17:57:14,433 - src.utils.helpers - INFO - extract_pdf_text took 5.89 seconds
+2025-10-05 17:57:14,449 - src.utils.helpers - INFO - process_document took 5.91 seconds
+2025-10-05 17:57:14,449 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: TATACONSUM q2 2025.pdf
+2025-10-05 17:57:19,852 - src.utils.helpers - INFO - extract_pdf_text took 5.40 seconds
+2025-10-05 17:57:19,872 - src.utils.helpers - INFO - process_document took 5.42 seconds
+2025-10-05 17:57:19,873 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: TATACONSUM q3 2024.pdf
+2025-10-05 17:57:25,773 - src.utils.helpers - INFO - extract_pdf_text took 5.90 seconds
+2025-10-05 17:57:25,795 - src.utils.helpers - INFO - process_document took 5.92 seconds
+2025-10-05 17:57:25,796 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: TATACONSUM q3 2025.pdf
+2025-10-05 17:57:31,381 - src.utils.helpers - INFO - extract_pdf_text took 5.58 seconds
+2025-10-05 17:57:31,383 - src.utils.helpers - INFO - process_document took 5.59 seconds
+2025-10-05 17:57:31,383 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: TATACONSUM q4 2024.pdf
+2025-10-05 17:57:35,898 - src.utils.helpers - INFO - extract_pdf_text took 4.51 seconds
+2025-10-05 17:57:35,926 - src.utils.helpers - INFO - process_document took 4.54 seconds
+2025-10-05 17:57:35,927 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: TATACONSUM q4 2025.pdf
+2025-10-05 17:57:39,998 - src.utils.helpers - INFO - extract_pdf_text took 4.07 seconds
+2025-10-05 17:57:40,008 - src.utils.helpers - INFO - process_document took 4.08 seconds
+2025-10-05 17:57:40,008 - src.utils.helpers - INFO - process_all_documents took 303.59 seconds
+2025-10-05 17:57:41,210 - src.data_preprocessing.text_cleaning - INFO - Saved 32 financial documents to data\processed\financial
+2025-10-05 17:57:41,307 - src.data_preprocessing.text_cleaning - INFO - Saved 31 transcript documents to data\processed\transcript
+2025-10-05 17:57:41,456 - src.data_preprocessing.text_cleaning - INFO - Created combined dataset with 32 records
+2025-10-05 17:57:41,456 - src.data_preprocessing.text_cleaning - INFO - Preprocessing pipeline completed successfully!
+2025-10-05 17:57:41,456 - src.data_preprocessing.text_cleaning - INFO - Processed 63 documents
+2025-10-05 17:57:41,456 - src.data_preprocessing.text_cleaning - INFO - Companies: BRITANNIA, DABUR, MARICO, TATACONSUM
+2025-10-05 17:57:41,456 - src.utils.helpers - INFO - run_preprocessing_pipeline took 305.04 seconds
+2025-10-05 17:57:41,456 - experiment.financial_rag_pipeline - INFO - Metrics:
+2025-10-05 17:57:41,456 - experiment.financial_rag_pipeline - INFO -   preprocessing_total_docs: 63
+2025-10-05 17:57:41,456 - experiment.financial_rag_pipeline - INFO -   preprocessing_financial: 32
+2025-10-05 17:57:41,456 - experiment.financial_rag_pipeline - INFO -   preprocessing_transcripts: 31
+2025-10-05 17:57:41,456 - src.utils.helpers - INFO - run_preprocessing took 305.07 seconds
+2026-01-28 18:36:31,577 - src.data_preprocessing.text_cleaning - INFO - Starting financial text preprocessing pipeline...
+2026-01-28 18:36:31,673 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q1 2024.pdf
+2026-01-28 18:36:38,682 - src.utils.helpers - INFO - extract_pdf_text took 7.01 seconds
+2026-01-28 18:36:38,700 - src.utils.helpers - INFO - process_document took 7.03 seconds
+2026-01-28 18:36:38,700 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q1 2025.pdf
+2026-01-28 18:36:41,669 - src.utils.helpers - INFO - extract_pdf_text took 2.97 seconds
+2026-01-28 18:36:41,679 - src.utils.helpers - INFO - process_document took 2.98 seconds
+2026-01-28 18:36:41,680 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q2 2024.pdf
+2026-01-28 18:36:47,613 - src.utils.helpers - INFO - extract_pdf_text took 5.93 seconds
+2026-01-28 18:36:47,632 - src.utils.helpers - INFO - process_document took 5.95 seconds
+2026-01-28 18:36:47,633 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q2 2025.pdf
+2026-01-28 18:36:52,350 - src.utils.helpers - INFO - extract_pdf_text took 4.72 seconds
+2026-01-28 18:36:52,367 - src.utils.helpers - INFO - process_document took 4.73 seconds
+2026-01-28 18:36:52,368 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q3 2024.pdf
+2026-01-28 18:36:56,255 - src.utils.helpers - INFO - extract_pdf_text took 3.89 seconds
+2026-01-28 18:36:56,271 - src.utils.helpers - INFO - process_document took 3.90 seconds
+2026-01-28 18:36:56,271 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q3 2025.pdf
+2026-01-28 18:36:59,457 - src.utils.helpers - INFO - extract_pdf_text took 3.19 seconds
+2026-01-28 18:36:59,457 - src.utils.helpers - INFO - process_document took 3.19 seconds
+2026-01-28 18:36:59,457 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q4 2024.pdf
+2026-01-28 18:37:05,671 - src.utils.helpers - INFO - extract_pdf_text took 6.21 seconds
+2026-01-28 18:37:05,694 - src.utils.helpers - INFO - process_document took 6.24 seconds
+2026-01-28 18:37:05,694 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: BRITANNIA q4 2025.pdf
+2026-01-28 18:37:10,913 - src.utils.helpers - INFO - extract_pdf_text took 5.22 seconds
+2026-01-28 18:37:10,946 - src.utils.helpers - INFO - process_document took 5.25 seconds
+2026-01-28 18:37:10,946 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q1 2024.pdf
+2026-01-28 18:37:13,091 - src.utils.helpers - INFO - extract_pdf_text took 2.14 seconds
+2026-01-28 18:37:13,106 - src.utils.helpers - INFO - process_document took 2.16 seconds
+2026-01-28 18:37:13,106 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q1 2025.pdf
+2026-01-28 18:37:16,204 - src.utils.helpers - INFO - extract_pdf_text took 3.10 seconds
+2026-01-28 18:37:16,220 - src.utils.helpers - INFO - process_document took 3.11 seconds
+2026-01-28 18:37:16,220 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q2 2024.pdf
+2026-01-28 18:37:18,768 - src.utils.helpers - INFO - extract_pdf_text took 2.55 seconds
+2026-01-28 18:37:18,784 - src.utils.helpers - INFO - process_document took 2.56 seconds
+2026-01-28 18:37:18,784 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q2 2025.pdf
+2026-01-28 18:37:21,673 - src.utils.helpers - INFO - extract_pdf_text took 2.89 seconds
+2026-01-28 18:37:21,687 - src.utils.helpers - INFO - process_document took 2.90 seconds
+2026-01-28 18:37:21,687 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q3 2024.pdf
+2026-01-28 18:37:23,457 - src.utils.helpers - INFO - extract_pdf_text took 1.77 seconds
+2026-01-28 18:37:23,467 - src.utils.helpers - INFO - process_document took 1.78 seconds
+2026-01-28 18:37:23,467 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q3 2025.pdf
+2026-01-28 18:37:25,296 - src.utils.helpers - INFO - extract_pdf_text took 1.83 seconds
+2026-01-28 18:37:25,316 - src.utils.helpers - INFO - process_document took 1.85 seconds
+2026-01-28 18:37:25,317 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q4 2024.pdf
+2026-01-28 18:37:28,394 - src.utils.helpers - INFO - extract_pdf_text took 3.08 seconds
+2026-01-28 18:37:28,417 - src.utils.helpers - INFO - process_document took 3.10 seconds
+2026-01-28 18:37:28,417 - src.data_preprocessing.text_cleaning - INFO - Processing financial filing: DABUR q4 2025.pdf
+2026-01-28 18:37:31,451 - src.utils.helpers - INFO - extract_pdf_text took 3.03 seconds
+2026-01-28 18:37:31,467 - src.utils.helpers - INFO - process_document took 3.05 seconds
+2026-01-28 18:37:31,467 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q1 2024.pdf
+2026-01-28 18:37:34,637 - src.utils.helpers - INFO - extract_pdf_text took 3.17 seconds
+2026-01-28 18:37:34,656 - src.utils.helpers - INFO - process_document took 3.19 seconds
+2026-01-28 18:37:34,656 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q1 2025.pdf
+2026-01-28 18:37:37,833 - src.utils.helpers - INFO - extract_pdf_text took 3.18 seconds
+2026-01-28 18:37:37,833 - src.utils.helpers - INFO - process_document took 3.18 seconds
+2026-01-28 18:37:37,833 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q2 2024.pdf
+2026-01-28 18:37:40,701 - src.utils.helpers - INFO - extract_pdf_text took 2.87 seconds
+2026-01-28 18:37:40,701 - src.utils.helpers - INFO - process_document took 2.87 seconds
+2026-01-28 18:37:40,701 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q2 2025.pdf
+2026-01-28 18:37:43,545 - src.utils.helpers - INFO - extract_pdf_text took 2.84 seconds
+2026-01-28 18:37:43,545 - src.utils.helpers - INFO - process_document took 2.84 seconds
+2026-01-28 18:37:43,545 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q3 2024.pdf
+2026-01-28 18:37:46,654 - src.utils.helpers - INFO - extract_pdf_text took 3.11 seconds
+2026-01-28 18:37:46,665 - src.utils.helpers - INFO - process_document took 3.12 seconds
+2026-01-28 18:37:46,666 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q3 2025.pdf
+2026-01-28 18:37:49,677 - src.utils.helpers - INFO - extract_pdf_text took 3.01 seconds
+2026-01-28 18:37:49,687 - src.utils.helpers - INFO - process_document took 3.02 seconds
+2026-01-28 18:37:49,688 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q4 2024.pdf
+2026-01-28 18:37:52,701 - src.utils.helpers - INFO - extract_pdf_text took 3.01 seconds
+2026-01-28 18:37:52,723 - src.utils.helpers - INFO - process_document took 3.03 seconds
+2026-01-28 18:37:52,724 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: BRITANNIA q4 2025.pdf
+2026-01-28 18:37:55,516 - src.utils.helpers - INFO - extract_pdf_text took 2.79 seconds
+2026-01-28 18:37:55,534 - src.utils.helpers - INFO - process_document took 2.81 seconds
+2026-01-28 18:37:55,534 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q1 2024.pdf
+2026-01-28 18:37:59,199 - src.utils.helpers - INFO - extract_pdf_text took 3.66 seconds
+2026-01-28 18:37:59,222 - src.utils.helpers - INFO - process_document took 3.69 seconds
+2026-01-28 18:37:59,222 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q1 2025.pdf
+2026-01-28 18:38:03,213 - src.utils.helpers - INFO - extract_pdf_text took 3.99 seconds
+2026-01-28 18:38:03,227 - src.utils.helpers - INFO - process_document took 4.00 seconds
+2026-01-28 18:38:03,227 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q2 2024.pdf
+2026-01-28 18:38:05,535 - src.utils.helpers - INFO - extract_pdf_text took 2.31 seconds
+2026-01-28 18:38:05,554 - src.utils.helpers - INFO - process_document took 2.33 seconds
+2026-01-28 18:38:05,554 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q2 2025.pdf
+2026-01-28 18:38:09,510 - src.utils.helpers - INFO - extract_pdf_text took 3.96 seconds
+2026-01-28 18:38:09,510 - src.utils.helpers - INFO - process_document took 3.96 seconds
+2026-01-28 18:38:09,510 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q3 2024.pdf
+2026-01-28 18:38:13,123 - src.utils.helpers - INFO - extract_pdf_text took 3.60 seconds
+2026-01-28 18:38:13,123 - src.utils.helpers - INFO - process_document took 3.60 seconds
+2026-01-28 18:38:13,138 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q3 2025.pdf
+2026-01-28 18:38:16,744 - src.utils.helpers - INFO - extract_pdf_text took 3.61 seconds
+2026-01-28 18:38:16,760 - src.utils.helpers - INFO - process_document took 3.62 seconds
+2026-01-28 18:38:16,760 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q4 2024.pdf
+2026-01-28 18:38:21,010 - src.utils.helpers - INFO - extract_pdf_text took 4.25 seconds
+2026-01-28 18:38:21,031 - src.utils.helpers - INFO - process_document took 4.27 seconds
+2026-01-28 18:38:21,031 - src.data_preprocessing.text_cleaning - INFO - Processing transcript: DABUR q4 2025.pdf
+2026-01-28 18:38:23,838 - src.utils.helpers - INFO - extract_pdf_text took 2.81 seconds
+2026-01-28 18:38:23,853 - src.utils.helpers - INFO - process_document took 2.82 seconds
+2026-01-28 18:38:23,853 - src.utils.helpers - INFO - process_all_documents took 112.24 seconds
+2026-01-28 18:38:24,028 - src.data_preprocessing.text_cleaning - INFO - Saved 16 financial documents to data\processed\financial
+2026-01-28 18:38:24,123 - src.data_preprocessing.text_cleaning - INFO - Saved 16 transcript documents to data\processed\transcript
+2026-01-28 18:38:24,371 - src.data_preprocessing.text_cleaning - INFO - Created combined dataset with 16 records
+2026-01-28 18:38:24,371 - src.data_preprocessing.text_cleaning - INFO - Preprocessing pipeline completed successfully!
+2026-01-28 18:38:24,371 - src.data_preprocessing.text_cleaning - INFO - Processed 32 documents
+2026-01-28 18:38:24,371 - src.data_preprocessing.text_cleaning - INFO - Companies: BRITANNIA, DABUR
+2026-01-28 18:38:24,371 - src.utils.helpers - INFO - run_preprocessing_pipeline took 112.79 seconds
+2026-01-28 18:38:24,371 - experiment.financial_rag_pipeline - INFO - Metrics:
+2026-01-28 18:38:24,371 - experiment.financial_rag_pipeline - INFO -   preprocessing_total_docs: 32
+2026-01-28 18:38:24,371 - experiment.financial_rag_pipeline - INFO -   preprocessing_financial: 16
+2026-01-28 18:38:24,371 - experiment.financial_rag_pipeline - INFO -   preprocessing_transcripts: 16
+2026-01-28 18:38:24,371 - src.utils.helpers - INFO - run_preprocessing took 112.99 seconds

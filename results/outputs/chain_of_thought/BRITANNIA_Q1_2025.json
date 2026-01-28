@@ -1,0 +1,73 @@
+{
+  "method": "chain_of_thought",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2025-10-12T11:52:25.216036",
+  "reasoning": "**Step 1: Identify Document Structure**\nThis document appears to be a quarterly financial results statement for Britannia Industries Limited. The key sections include the Consolidated Financial Results and the Standalone Financial Results, both of which contain tables with financial metrics.\n\n**Step 2: Extract Core Financial Metrics**\n\n1. Revenue from operations\n   - Look for: \"Revenue from operations\", \"Total revenue\", \"Net sales\"\n   - Location in document: Consolidated Financial Results, Part I\n   - Value found: 4250.29 (in INR Crores)\n\n2. Net profit for the period\n   - Look for: \"Net profit\", \"Profit after tax\", \"PAT\"\n   - Location: Consolidated Financial Results, Part I\n   - Value: 504.88 (in INR Crores)\n\n3. Basic Earnings per share\n   - Look for: \"Basic EPS\", \"Earnings per share\"\n   - Location: Consolidated Financial Results, Part I\n   - Value: 20.99 (in INR)\n\n4. Total assets\n   - Look for: Balance sheet section, \"Total assets\"\n   - Location: Not found in the provided document\n\n5. Total liabilities\n   - Look for: Balance sheet section, \"Total liabilities\"\n   - Location: Not found in the provided document\n\n6. Margins (if calculable or stated)\n   - Gross Margin: Not Available\n   - Operating Margin: Not Available\n\n7. Business segment metrics (if available)\n   - Foods Business Revenue: Not Available\n   - Premium Personal Care contribution: Not Available\n\n**Step 3: Verify and Cross-check**\nThe numbers appear to be logically consistent, and units are consistent within each metric. However, some metrics like Total Assets and Total Liabilities are not found in the provided document.\n\n**Step 4: Final Output**\nHere is the extracted metrics in JSON format:\n\n```json",
+  "extraction": {
+    "company": "BRITANNIA",
+    "quarter": "Q1",
+    "year": 2025,
+    "reasoning": {
+      "document_type": "Quarterly Financial Results",
+      "key_sections_found": [
+        "Consolidated Financial Results",
+        "Standalone Financial Results"
+      ],
+      "confidence": "medium"
+    },
+    "metrics": {
+      "revenue_from_operations": {
+        "value": 4250.29,
+        "unit": "INR Crores",
+        "source": "Consolidated Financial Results, Part I"
+      },
+      "net_profit": {
+        "value": 504.88,
+        "unit": "INR Crores",
+        "source": "Consolidated Financial Results, Part I"
+      },
+      "basic_eps": {
+        "value": 20.99,
+        "unit": "INR",
+        "source": "Consolidated Financial Results, Part I"
+      },
+      "total_assets": {
+        "value": "Not Available",
+        "unit": "",
+        "source": ""
+      },
+      "total_liabilities": {
+        "value": "Not Available",
+        "unit": "",
+        "source": ""
+      },
+      "gross_margin": {
+        "value": "Not Available",
+        "unit": "%",
+        "source": ""
+      },
+      "operating_margin": {
+        "value": "Not Available",
+        "unit": "%",
+        "source": ""
+      },
+      "foods_business_revenue": {
+        "value": "Not Available",
+        "unit": "",
+        "source": ""
+      },
+      "premium_personal_care_contribution": {
+        "value": "Not Available",
+        "unit": "",
+        "source": ""
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 6678,
+    "completion_tokens": 734,
+    "total_tokens": 7412,
+    "cost_usd": 0.00451988,
+    "latency_seconds": 13.321816
+  }
+}

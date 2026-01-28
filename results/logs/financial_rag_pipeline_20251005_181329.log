@@ -1,0 +1,5 @@
+2025-10-05 18:13:29,201 - INFO - Started experiment: financial_rag_pipeline
+2025-10-05 18:15:49,480 - INFO - Metrics:
+2025-10-05 18:15:49,480 - INFO -   embedding_model: all-MiniLM-L6-v2
+2025-10-05 18:15:49,481 - INFO -   embedding_dimension: 384
+2025-10-05 18:15:49,482 - INFO -   embedding_num_chunks: 2694

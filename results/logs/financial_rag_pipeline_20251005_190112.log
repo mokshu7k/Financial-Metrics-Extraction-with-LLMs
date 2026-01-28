@@ -1,0 +1,6 @@
+2025-10-05 19:01:12,977 - INFO - Started experiment: financial_rag_pipeline
+2025-10-05 19:12:58,084 - INFO - Metrics:
+2025-10-05 19:12:58,087 - INFO -   zero_shot_model: llama-3.3-70b-versatile
+2025-10-05 19:12:58,087 - INFO -   zero_shot_total_cost: 0.15259499999999998
+2025-10-05 19:12:58,088 - INFO -   zero_shot_total_tokens: 100210
+2025-10-05 19:12:58,088 - INFO -   zero_shot_num_requests: 17

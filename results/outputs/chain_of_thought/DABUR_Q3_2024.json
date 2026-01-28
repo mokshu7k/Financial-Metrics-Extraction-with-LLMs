@@ -1,0 +1,69 @@
+{
+  "method": "chain_of_thought",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2025-10-12T12:03:43.855681",
+  "reasoning": "## Step 1: Identify Document Structure\nThe document is a quarterly financial results statement for Dabur India Limited, covering the quarter and nine months ended December 31, 2023. The key sections include the statement of unaudited consolidated financial results, segment-wise results, and additional disclosures as per SEBI regulations.\n\n## Step 2: Extract Core Financial Metrics\n1. **Revenue from operations**: Found in the \"Statement of unaudited consolidated financial results\" section, under \"Income\" - \"Revenue from operations\".\n   - Location: Page 12, Table: Statement of unaudited consolidated financial results.\n   - Value: ₹3255.06 crores for the quarter ended December 31, 2023.\n\n2. **Net profit for the period**: Found in the same section as above, under \"Profit before tax\" and then \"Net profit for the period/year\".\n   - Location: Page 12, Table: Statement of unaudited consolidated financial results.\n   - Value: ₹506.44 crores for the quarter ended December 31, 2023.\n\n3. **Basic Earnings per share**: Found in the \"Statement of unaudited consolidated financial results\" section, under \"Earnings per share (Face value of ₹1 each)\".\n   - Location: Page 12, Table: Statement of unaudited consolidated financial results.\n   - Value: ₹2.90 for the quarter ended December 31, 2023.\n\n4. **Total assets**: Found in the \"Unaudited consolidated segment wise revenue, results, assets and liabilities\" section.\n   - Location: Page 15, Table: Unaudited consolidated segment wise revenue, results, assets and liabilities.\n   - Value: ₹15326.80 crores as of December 31, 2023.\n\n5. **Total liabilities**: Found in the same section as total assets.\n   - Location: Page 15, Table: Unaudited consolidated segment wise revenue, results, assets and liabilities.\n   - Value: ₹5344.00 crores as of December 31, 2023.\n\n6. **Margins**:\n   - **Operating Margin**: Found in the \"Additional disclosures as per regulation 52(4) of Securities & Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015\" section.\n     - Location: Page 20, Table: Additional disclosures.\n     - Value: 20.52% for the quarter ended December 31, 2023.\n   - **Net profit margin**: Also found in the \"Additional disclosures\" section.\n     - Location: Page 20, Table: Additional disclosures.\n     - Value: 15.56% for the quarter ended December 31, 2023.\n\n7. **Business segment metrics**:\n   - **Foods Business Revenue**: Found in the \"Unaudited consolidated segment wise revenue, results, assets and liabilities\" section.\n     - Location: Page 15, Table: Unaudited consolidated segment wise revenue, results, assets and liabilities.\n     - Value: ₹442.12 crores for the quarter ended December 31, 2023.\n   - **Premium Personal Care contribution**: Not explicitly stated in the provided document.\n\n## Step 3: Verify and Cross-check\n- The numbers seem to logically align with what would be expected in a financial report.\n- Units are consistent (all in crores or percentages).\n- No obvious errors or misreadings were identified.\n\n## Step 4: Final Output\n```json",
+  "extraction": {
+    "company": "DABUR",
+    "quarter": "Q3",
+    "year": 2024,
+    "reasoning": {
+      "document_type": "Quarterly Financial Results Statement",
+      "key_sections_found": [
+        "Statement of unaudited consolidated financial results",
+        "Unaudited consolidated segment wise revenue, results, assets and liabilities",
+        "Additional disclosures as per regulation 52(4) of Securities & Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015"
+      ],
+      "confidence": "high"
+    },
+    "metrics": {
+      "revenue_from_operations": {
+        "value": 3255.06,
+        "unit": "crores",
+        "source": "Statement of unaudited consolidated financial results"
+      },
+      "net_profit": {
+        "value": 506.44,
+        "unit": "crores",
+        "source": "Statement of unaudited consolidated financial results"
+      },
+      "basic_eps": {
+        "value": 2.9,
+        "unit": "rupees",
+        "source": "Statement of unaudited consolidated financial results"
+      },
+      "total_assets": {
+        "value": 15326.8,
+        "unit": "crores",
+        "source": "Unaudited consolidated segment wise revenue, results, assets and liabilities"
+      },
+      "total_liabilities": {
+        "value": 5344.0,
+        "unit": "crores",
+        "source": "Unaudited consolidated segment wise revenue, results, assets and liabilities"
+      },
+      "operating_margin": {
+        "value": 20.52,
+        "unit": "%",
+        "source": "Additional disclosures"
+      },
+      "net_profit_margin": {
+        "value": 15.56,
+        "unit": "%",
+        "source": "Additional disclosures"
+      },
+      "foods_business_revenue": {
+        "value": 442.12,
+        "unit": "crores",
+        "source": "Unaudited consolidated segment wise revenue, results, assets and liabilities"
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 7104,
+    "completion_tokens": 1127,
+    "total_tokens": 8231,
+    "cost_usd": 0.005081690000000001,
+    "latency_seconds": 3.534428
+  }
+}

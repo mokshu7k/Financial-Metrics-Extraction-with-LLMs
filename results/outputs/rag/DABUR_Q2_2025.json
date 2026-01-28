@@ -1,0 +1,97 @@
+{
+  "method": "rag",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2025-10-12T12:10:38.841272",
+  "retrieval": {
+    "num_contexts": 1,
+    "top_scores": [
+      0.37521445751190186
+    ],
+    "retrieval_time_seconds": 0.02689870454545454,
+    "contexts_used": [
+      {
+        "chunk_id": "DABUR_Q2_2025_transcript_chunk_8",
+        "score": 0.37521445751190186,
+        "section_type": null
+      }
+    ]
+  },
+  "extraction": {
+    "company": "DABUR",
+    "quarter": "Q2",
+    "year": 2025,
+    "extraction_metadata": {
+      "num_contexts_analyzed": 1,
+      "section_types_covered": [
+        "None"
+      ],
+      "confidence": "medium"
+    },
+    "commentary": {
+      "revenue_performance": {
+        "summary": "Dabur grew ahead of the category and gained volume market shares despite a slowdown.",
+        "key_points": [
+          "Grew ahead of the category",
+          "Gained volume market shares of 240 bps"
+        ],
+        "source_contexts": [
+          1
+        ]
+      },
+      "profitability": {
+        "summary": "Consolidated gross margins expanded, but operating profit declined due to deleverage from revenue decline.",
+        "key_points": [
+          "Consolidated gross margins expanded by 102 basis points",
+          "Operating profit declined by 16.4% due to deleverage from revenue decline"
+        ],
+        "source_contexts": [
+          1
+        ]
+      },
+      "business_outlook": {
+        "summary": "No explicit business outlook or guidance provided.",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "key_challenges": {
+        "summary": "No explicit challenges or headwinds mentioned, but a slowdown is referenced.",
+        "key_points": [
+          "Slowdown in the market"
+        ],
+        "source_contexts": [
+          1
+        ]
+      },
+      "strategic_initiatives": {
+        "summary": "Dabur has a multipronged strategy to drive growth, including ramping up the drinks portfolio and improving affordability.",
+        "key_points": [
+          "Ramping up the drinks portfolio",
+          "Improving affordability through pack price architecture",
+          "Revenue growth management",
+          "Drive premiumization in emerging channels",
+          "Expanding the distribution footprint"
+        ],
+        "source_contexts": [
+          1
+        ]
+      },
+      "market_conditions": {
+        "summary": "The market is experiencing a slowdown, but Dabur is growing ahead of the category.",
+        "key_points": [
+          "Slowdown in the market",
+          "Dabur is growing ahead of the category"
+        ],
+        "source_contexts": [
+          1
+        ]
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 795,
+    "completion_tokens": 495,
+    "total_tokens": 1290,
+    "cost_usd": 0.0008601000000000001,
+    "latency_seconds": 6.149898
+  }
+}

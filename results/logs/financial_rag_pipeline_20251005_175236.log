@@ -1,0 +1,5 @@
+2025-10-05 17:52:36,382 - INFO - Started experiment: financial_rag_pipeline
+2025-10-05 17:57:41,456 - INFO - Metrics:
+2025-10-05 17:57:41,456 - INFO -   preprocessing_total_docs: 63
+2025-10-05 17:57:41,456 - INFO -   preprocessing_financial: 32
+2025-10-05 17:57:41,456 - INFO -   preprocessing_transcripts: 31

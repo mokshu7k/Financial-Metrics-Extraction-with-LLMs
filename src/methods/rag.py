@@ -50,8 +50,6 @@ class RAGExtractor:
         
         try:
             if self.api_client and hasattr(self.api_client, 'chat'):
-                # Assumes self.api_client is the groq.Groq instance
-                
                 response = self.api_client.chat.completions.create(
                     model=self.model_name,
                     messages=[
@@ -71,41 +69,6 @@ class RAGExtractor:
                 
             else:
                 raise ValueError(f"Unsupported client or client not initialized for model: {self.model_name}")
-            
-            # if "gpt" in self.model_name.lower():
-            #     response = self.api_client.chat.completions.create(
-            #         model=self.model_name,
-            #         messages=[
-            #             {
-            #                 "role": "system", 
-            #                 "content": "You are a financial analyst using provided context to extract accurate information."
-            #             },
-            #             {"role": "user", "content": prompt}
-            #         ],
-            #         temperature=self.temperature,
-            #         max_tokens=self.max_tokens
-            #     )
-                
-            #     content = response.choices[0].message.content
-            #     prompt_tokens = response.usage.prompt_tokens
-            #     completion_tokens = response.usage.completion_tokens
-                
-            # elif "claude" in self.model_name.lower():
-            #     response = self.api_client.messages.create(
-            #         model=self.model_name,
-            #         max_tokens=self.max_tokens,
-            #         temperature=self.temperature,
-            #         messages=[
-            #             {"role": "user", "content": prompt}
-            #         ]
-            #     )
-                
-            #     content = response.content[0].text
-            #     prompt_tokens = response.usage.input_tokens
-            #     completion_tokens = response.usage.output_tokens
-            
-            # else:
-            #     raise ValueError(f"Unsupported model: {self.model_name}")
             
             cost = calculate_cost(prompt_tokens, completion_tokens, self.model_name)
             latency = (datetime.now() - start_time).total_seconds()
@@ -137,46 +100,106 @@ class RAGExtractor:
         document_type: Optional[str] = None
     ) -> List[Dict[str, Any]]:
         """
-        Retrieve relevant document chunks.
+        Retrieve relevant document chunks with RELAXED filtering.
         
-        Args:
-            query: Search query
-            company: Filter by company
-            quarter: Filter by quarter
-            year: Filter by year
-            document_type: Optional filter by document type
-        
-        Returns:
-            List of retrieved contexts
+        CRITICAL FIX: The original implementation was too restrictive.
+        Now we try multiple strategies to get relevant contexts.
         """
         if not self.vector_store_manager:
             logger.error("No vector store manager initialized")
             return []
         
         start_time = datetime.now()
+        retrieved = []
         
-        # Build filter criteria
-        filter_criteria = {
-            'company': company,
-            'quarter': quarter,
-            'year': year
-        }
+        # Strategy 1: Try with full filter (company + quarter + year + doc_type)
+        try:
+            filter_criteria = {
+                'company': company,
+                'quarter': quarter,
+                'year': year
+            }
+            
+            if document_type:
+                filter_criteria['document_type'] = document_type
+            
+            logger.info(f"RAG Retrieval - Attempting with filter: {filter_criteria}")
+            
+            retrieved = self.vector_store_manager.search_similar_chunks(
+                query=query,
+                k=self.retrieval_k,
+                filter_criteria=filter_criteria
+            )
+            
+            logger.info(f"RAG Retrieval - Strategy 1 (Full Filter): Retrieved {len(retrieved)} chunks")
+            
+        except Exception as e:
+            logger.warning(f"RAG Retrieval - Strategy 1 failed: {e}")
         
-        if document_type:
-            filter_criteria['document_type'] = document_type
+        # Strategy 2: If no results, try with just company and doc_type
+        if not retrieved:
+            try:
+                filter_criteria = {'company': company}
+                if document_type:
+                    filter_criteria['document_type'] = document_type
+                
+                logger.info(f"RAG Retrieval - Attempting with relaxed filter: {filter_criteria}")
+                
+                retrieved = self.vector_store_manager.search_similar_chunks(
+                    query=query,
+                    k=self.retrieval_k,
+                    filter_criteria=filter_criteria
+                )
+                
+                logger.info(f"RAG Retrieval - Strategy 2 (Company + DocType): Retrieved {len(retrieved)} chunks")
+                
+            except Exception as e:
+                logger.warning(f"RAG Retrieval - Strategy 2 failed: {e}")
         
-        # Retrieve chunks
-        retrieved = self.vector_store_manager.search_similar_chunks(
-            query=query,
-            k=self.retrieval_k,
-            filter_criteria=filter_criteria
-        )
+        # Strategy 3: If still no results, try with just doc_type
+        if not retrieved and document_type:
+            try:
+                filter_criteria = {'document_type': document_type}
+                
+                logger.info(f"RAG Retrieval - Attempting with minimal filter: {filter_criteria}")
+                
+                retrieved = self.vector_store_manager.search_similar_chunks(
+                    query=query,
+                    k=self.retrieval_k,
+                    filter_criteria=filter_criteria
+                )
+                
+                logger.info(f"RAG Retrieval - Strategy 3 (DocType Only): Retrieved {len(retrieved)} chunks")
+                
+            except Exception as e:
+                logger.warning(f"RAG Retrieval - Strategy 3 failed: {e}")
+        
+        # Strategy 4: Last resort - no filtering, just semantic search
+        if not retrieved:
+            try:
+                logger.info("RAG Retrieval - Attempting with NO filter (semantic only)")
+                
+                retrieved = self.vector_store_manager.search_similar_chunks(
+                    query=query,
+                    k=self.retrieval_k,
+                    filter_criteria=None
+                )
+                
+                logger.info(f"RAG Retrieval - Strategy 4 (No Filter): Retrieved {len(retrieved)} chunks")
+                
+            except Exception as e:
+                logger.error(f"RAG Retrieval - All strategies failed: {e}")
         
         retrieval_time = (datetime.now() - start_time).total_seconds()
         self.total_retrieval_time += retrieval_time
         self.num_retrievals += 1
         
-        logger.info(f"Retrieved {len(retrieved)} contexts in {retrieval_time:.2f}s for: {query[:50]}...")
+        if retrieved:
+            logger.info(f"✓ Retrieved {len(retrieved)} contexts in {retrieval_time:.2f}s")
+            logger.info(f"  Top scores: {[c.get('score', 0) for c in retrieved[:3]]}")
+            logger.info(f"  Query: {query[:100]}...")
+        else:
+            logger.warning(f"✗ NO contexts retrieved for query: {query[:100]}...")
         
         return retrieved
     
@@ -185,7 +208,7 @@ class RAGExtractor:
         company: str,
         quarter: str,
         year: int,
-        query: str = "Extract all financial metrics"
+        query: str = "Extract all financial metrics including revenue, profit, EPS, assets, liabilities, margins"
     ) -> Dict[str, Any]:
         """Extract metrics using RAG."""
         logger.info(f"Extracting metrics for {company} {quarter} {year} (RAG)")
@@ -200,8 +223,18 @@ class RAGExtractor:
         )
         
         if not contexts:
-            logger.warning("No contexts retrieved, falling back to empty context")
-            contexts = [{"content": "No relevant context found", "score": 0.0}]
+            logger.warning("⚠ No contexts retrieved, using fallback message")
+            contexts = [{
+                "content": f"No specific context found for {company} {quarter} {year}. Extract what you can from general knowledge.",
+                "score": 0.0,
+                "chunk_id": "fallback",
+                "section_type": "none"
+            }]
+        
+        # Log retrieved content for debugging
+        logger.info(f"RAG Context Preview:")
+        for i, ctx in enumerate(contexts[:2]):
+            logger.info(f"  Context {i+1}: {ctx.get('content', '')[:200]}...")
         
         # Generate prompt with contexts
         prompt = self.prompt_generator.create_extraction_prompt(
@@ -272,7 +305,7 @@ class RAGExtractor:
         company: str,
         quarter: str,
         year: int,
-        query: str = "Extract management commentary and key discussion points"
+        query: str = "Extract management commentary on revenue, profitability, outlook, challenges, initiatives, and market conditions"
     ) -> Dict[str, Any]:
         """Extract commentary using RAG."""
         logger.info(f"Extracting commentary for {company} {quarter} {year} (RAG)")
@@ -287,8 +320,18 @@ class RAGExtractor:
         )
         
         if not contexts:
-            logger.warning("No transcript contexts retrieved")
-            contexts = [{"content": "No relevant context found", "score": 0.0}]
+            logger.warning("⚠ No transcript contexts retrieved, using fallback")
+            contexts = [{
+                "content": f"No specific transcript context found for {company} {quarter} {year}. Extract what you can from general knowledge.",
+                "score": 0.0,
+                "chunk_id": "fallback",
+                "section_type": "none"
+            }]
+        
+        # Log retrieved content for debugging
+        logger.info(f"RAG Context Preview:")
+        for i, ctx in enumerate(contexts[:2]):
+            logger.info(f"  Context {i+1}: {ctx.get('content', '')[:200]}...")
         
         # Generate prompt
         prompt = self.prompt_generator.create_commentary_extraction_prompt(
@@ -364,6 +407,12 @@ class RAGExtractor:
         output_path = Path(output_dir)
         output_path.mkdir(parents=True, exist_ok=True)
         
+        # Create subdirectories for financial and transcript
+        financial_dir = output_path / "financial"
+        transcript_dir = output_path / "transcript"
+        financial_dir.mkdir(parents=True, exist_ok=True)
+        transcript_dir.mkdir(parents=True, exist_ok=True)
+        
         logger.info(f"Starting RAG batch extraction for {len(documents)} documents")
         
         for i, doc in enumerate(documents):
@@ -374,7 +423,7 @@ class RAGExtractor:
             year = metadata.get('year', doc.get('year', 0))
             doc_type = metadata.get('document_type', doc.get('document_type', 'unknown'))
             
-            logger.info(f"Processing document {i+1}/{len(documents)} (RAG): {company}")
+            logger.info(f"Processing document {i+1}/{len(documents)} (RAG): {company} ({doc_type})")
             
             try:
                 if doc_type == 'financial':
@@ -383,17 +432,18 @@ class RAGExtractor:
                         quarter=quarter,
                         year=year
                     )
+                    filename = f"{company}_{quarter}_{year}.json"
+                    safe_json_save(result, financial_dir / filename)
                 else:
                     result = self.extract_commentary(
                         company=company,
                         quarter=quarter,
                         year=year
                     )
+                    filename = f"{company}_{quarter}_{year}.json"
+                    safe_json_save(result, transcript_dir / filename)
                 
                 results.append(result)
-                
-                filename = f"{company}_{quarter}_{year}.json"
-                safe_json_save(result, output_path / filename)
                 
             except Exception as e:
                 logger.error(f"Failed to process document {i+1}: {e}")
@@ -407,6 +457,8 @@ class RAGExtractor:
             "model": self.model_name,
             "retrieval_k": self.retrieval_k,
             "total_documents": len(documents),
+            "financial_documents": len([r for r in results if r.get('extraction', {}).get('metrics')]),
+            "transcript_documents": len([r for r in results if r.get('extraction', {}).get('commentary')]),
             "successful_extractions": len([r for r in results if "error" not in r.get("extraction", {})]),
             "failed_extractions": len([r for r in results if "error" in r.get("extraction", {})]),
             "total_retrievals": self.num_retrievals,

@@ -1,0 +1,70 @@
+{
+  "method": "rag",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2025-10-12T12:10:28.766231",
+  "retrieval": {
+    "num_contexts": 1,
+    "top_scores": [
+      0.0
+    ],
+    "retrieval_time_seconds": 0.027359690476190468,
+    "contexts_used": [
+      {
+        "chunk_id": "unknown",
+        "score": 0.0,
+        "section_type": "unknown"
+      }
+    ]
+  },
+  "extraction": {
+    "company": "DABUR",
+    "quarter": "Q1",
+    "year": 2025,
+    "extraction_metadata": {
+      "num_contexts_analyzed": 1,
+      "section_types_covered": [
+        "Unknown"
+      ],
+      "confidence": "low"
+    },
+    "commentary": {
+      "revenue_performance": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "profitability": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "business_outlook": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "key_challenges": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "strategic_initiatives": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "market_conditions": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 594,
+    "completion_tokens": 302,
+    "total_tokens": 896,
+    "cost_usd": 0.0005890400000000001,
+    "latency_seconds": 4.671199
+  }
+}

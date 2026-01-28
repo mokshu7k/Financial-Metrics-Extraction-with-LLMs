@@ -1,0 +1,4 @@
+method,financial_accuracy,financial_f1,financial_mape,transcript_similarity,transcript_rouge_l,transcript_bleu,avg_tokens,avg_cost_usd,avg_latency_sec,total_cost_usd
+chain_of_thought,0,0,0,0,0,0,7917.35294117647,0.004870308823529412,31.062975823529413,0.08279525000000001
+rag,0,0,0,0,0,0,1157.34375,0.0007683515625,5.66572425,0.024587250000000005
+zero_shot,0,0,0,0,0,0,5636.25,0.007486824687499999,22.293831812500002,0.23957838999999997

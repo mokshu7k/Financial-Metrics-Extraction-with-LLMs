@@ -5,7 +5,8 @@ import logging
 from typing import Dict, List, Any, Optional
 from pathlib import Path
 from datetime import datetime
-
+from dotenv import load_dotenv
+load_dotenv()
 from src.prompts.zero_shot import ZeroShotPrompt
 from src.utils.helpers import timer, retry_on_failure, calculate_cost, safe_json_save
 
@@ -19,7 +20,7 @@ class ZeroShotExtractor:
     
     def __init__(
         self,
-        model_name: str = "gpt-3.5-turbo",
+        model_name: str = "llama-3.3-70b-versatile",
         temperature: float = 0.1,
         max_tokens: int = 1000,
         api_client=None  # Groq client
@@ -352,3 +353,90 @@ class ZeroShotExtractor:
             "avg_cost_per_request": self.total_cost / self.num_requests if self.num_requests > 0 else 0,
             "avg_tokens_per_request": self.total_tokens / self.num_requests if self.num_requests > 0 else 0
         }
+
+    def batch_extract(self,documents: List[Dict[str, Any]],output_dir: str = "results/outputs/zero_shot") -> List[Dict[str, Any]]:
+        """
+        Extract from multiple documents in batch.
+        
+        Args:
+            documents: List of documents with metadata
+            output_dir: Directory to save results
+        
+        Returns:
+            List of extraction results
+        """
+        results = []
+        output_path = Path(output_dir)
+        output_path.mkdir(parents=True, exist_ok=True)
+        
+        # Create subdirectories for financial and transcript
+        financial_dir = output_path / "financial"
+        transcript_dir = output_path / "transcript"
+        financial_dir.mkdir(parents=True, exist_ok=True)
+        transcript_dir.mkdir(parents=True, exist_ok=True)
+        
+        logger.info(f"Starting batch extraction for {len(documents)} documents")
+        
+        for i, doc in enumerate(documents):
+            # Extract metadata - handle both nested and flat structures
+            metadata = doc.get('metadata', {})
+            company = metadata.get('company', doc.get('company', 'Unknown'))
+            quarter = metadata.get('quarter', doc.get('quarter', 'Unknown'))
+            year = metadata.get('year', doc.get('year', 0))
+            doc_type = metadata.get('document_type', doc.get('document_type', 'unknown'))
+            cleaned_text = doc.get('cleaned_text', doc.get('raw_text', ''))
+            
+            logger.info(f"Processing document {i+1}/{len(documents)}: {company} ({doc_type})")
+            
+            try:
+                if doc_type == 'financial':
+                    result = self.extract_metrics(
+                        company,
+                        quarter,
+                        year,
+                        cleaned_text
+                    )
+                    # Save to financial folder
+                    filename = f"{company}_{quarter}_{year}.json"
+                    safe_json_save(result, financial_dir / filename)
+                    
+                else:  # transcript
+                    result = self.extract_commentary(
+                        company,
+                        quarter,
+                        year,
+                        cleaned_text
+                    )
+                    # Save to transcript folder
+                    filename = f"{company}_{quarter}_{year}.json"
+                    safe_json_save(result, transcript_dir / filename)
+                
+                results.append(result)
+                
+            except Exception as e:
+                logger.error(f"Failed to process document {i+1}: {e}")
+                results.append({
+                    "error": str(e),
+                    "document": company
+                })
+        
+        # Save summary
+        summary = {
+            "method": "zero_shot",
+            "model": self.model_name,
+            "total_documents": len(documents),
+            "financial_documents": len([r for r in results if r.get('extraction', {}).get('metrics')]),
+            "transcript_documents": len([r for r in results if r.get('extraction', {}).get('commentary')]),
+            "successful_extractions": len([r for r in results if "error" not in r]),
+            "failed_extractions": len([r for r in results if "error" in r]),
+            "total_cost_usd": self.total_cost,
+            "total_tokens": self.total_tokens,
+            "avg_cost_per_doc": self.total_cost / len(documents) if documents else 0,
+            "timestamp": datetime.now().isoformat()
+        }
+        
+        safe_json_save(summary, output_path / "batch_summary.json")
+        
+        logger.info(f"Batch extraction complete. Total cost: ${self.total_cost:.4f}")
+        
+        return results

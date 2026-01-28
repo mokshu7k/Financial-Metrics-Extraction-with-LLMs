@@ -1,0 +1,70 @@
+{
+  "method": "rag",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2025-10-12T12:10:18.897288",
+  "retrieval": {
+    "num_contexts": 1,
+    "top_scores": [
+      0.0
+    ],
+    "retrieval_time_seconds": 0.02789467499999999,
+    "contexts_used": [
+      {
+        "chunk_id": "unknown",
+        "score": 0.0,
+        "section_type": "unknown"
+      }
+    ]
+  },
+  "extraction": {
+    "company": "BRITANNIA",
+    "quarter": "Q4",
+    "year": 2025,
+    "extraction_metadata": {
+      "num_contexts_analyzed": 1,
+      "section_types_covered": [
+        "Unknown"
+      ],
+      "confidence": "low"
+    },
+    "commentary": {
+      "revenue_performance": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "profitability": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "business_outlook": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "key_challenges": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "strategic_initiatives": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "market_conditions": {
+        "summary": "No information available",
+        "key_points": [],
+        "source_contexts": []
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 596,
+    "completion_tokens": 303,
+    "total_tokens": 899,
+    "cost_usd": 0.00059101,
+    "latency_seconds": 4.662036
+  }
+}

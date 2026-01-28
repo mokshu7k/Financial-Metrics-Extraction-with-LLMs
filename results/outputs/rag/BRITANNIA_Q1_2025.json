@@ -1,0 +1,76 @@
+{
+  "method": "rag",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2025-10-12T12:09:46.367919",
+  "retrieval": {
+    "num_contexts": 1,
+    "top_scores": [
+      0.4029935896396637
+    ],
+    "retrieval_time_seconds": 0.028585705882352937,
+    "contexts_used": [
+      {
+        "chunk_id": "BRITANNIA_Q1_2025_transcript_chunk_46",
+        "score": 0.4029935896396637,
+        "section_type": "management_discussion"
+      }
+    ]
+  },
+  "extraction": {
+    "company": "BRITANNIA",
+    "quarter": "Q1",
+    "year": 2025,
+    "extraction_metadata": {
+      "num_contexts_analyzed": 1,
+      "section_types_covered": [
+        "management_discussion"
+      ],
+      "confidence": "medium"
+    },
+    "commentary": {
+      "revenue_performance": {
+        "summary": "No explicit commentary on revenue performance",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "profitability": {
+        "summary": "No explicit commentary on profitability",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "business_outlook": {
+        "summary": "No explicit commentary on business outlook",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "key_challenges": {
+        "summary": "No explicit commentary on key challenges",
+        "key_points": [],
+        "source_contexts": []
+      },
+      "strategic_initiatives": {
+        "summary": "The company has implemented tech-enabled sales transformation, which has led to tangible gains",
+        "key_points": [
+          "Close to two-hour of market working has gone up",
+          "Reduction in out-of-stock instances",
+          "Removal of corruption in the system"
+        ],
+        "source_contexts": [
+          1
+        ]
+      },
+      "market_conditions": {
+        "summary": "No explicit commentary on market conditions",
+        "key_points": [],
+        "source_contexts": []
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 811,
+    "completion_tokens": 390,
+    "total_tokens": 1201,
+    "cost_usd": 0.00078659,
+    "latency_seconds": 5.918798
+  }
+}

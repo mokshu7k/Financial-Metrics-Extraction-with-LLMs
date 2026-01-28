@@ -1,0 +1,6 @@
+2025-10-05 18:06:58,633 - INFO - Started experiment: financial_rag_pipeline
+2025-10-05 18:07:01,836 - INFO - Metrics:
+2025-10-05 18:07:01,836 - INFO -   chunking_strategy: fixed_size
+2025-10-05 18:07:01,837 - INFO -   chunking_total_chunks: 2694
+2025-10-05 18:07:01,837 - INFO -   chunking_financial: 1071
+2025-10-05 18:07:01,838 - INFO -   chunking_transcript: 1623

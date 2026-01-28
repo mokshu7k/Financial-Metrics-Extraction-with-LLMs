@@ -1,0 +1,6 @@
+2026-01-28 19:49:26,960 - INFO - Started experiment: financial_rag_pipeline
+2026-01-28 19:58:47,299 - INFO - Metrics:
+2026-01-28 19:58:47,300 - INFO -   zero_shot_model: llama-3.3-70b-versatile
+2026-01-28 19:58:47,300 - INFO -   zero_shot_total_cost: 0.05764563000000002
+2026-01-28 19:58:47,301 - INFO -   zero_shot_total_tokens: 96417
+2026-01-28 19:58:47,301 - INFO -   zero_shot_num_requests: 14

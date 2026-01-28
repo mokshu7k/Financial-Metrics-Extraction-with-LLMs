@@ -1,0 +1,11 @@
+{
+  "method": "zero_shot",
+  "model": "llama-3.3-70b-versatile",
+  "total_documents": 16,
+  "successful_extractions": 10,
+  "failed_extractions": 6,
+  "total_cost_usd": 0.029538780000000008,
+  "total_tokens": 49162,
+  "avg_cost_per_doc": 0.0018461737500000005,
+  "timestamp": "2025-10-12T11:38:42.918372"
+}

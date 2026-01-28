@@ -1,0 +1,5 @@
+2026-01-28 18:36:31,350 - INFO - Started experiment: financial_rag_pipeline
+2026-01-28 18:38:24,371 - INFO - Metrics:
+2026-01-28 18:38:24,371 - INFO -   preprocessing_total_docs: 32
+2026-01-28 18:38:24,371 - INFO -   preprocessing_financial: 16
+2026-01-28 18:38:24,371 - INFO -   preprocessing_transcripts: 16

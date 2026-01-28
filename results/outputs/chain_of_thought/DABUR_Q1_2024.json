@@ -1,0 +1,68 @@
+{
+  "method": "chain_of_thought",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2025-10-12T11:56:59.965633",
+  "reasoning": "**Step 1: Identify Document Structure**\nThis document appears to be a quarterly financial results statement for Dabur India Limited. The key sections include the auditor's review report, the statement of unaudited consolidated financial results, segment-wise revenue and results, and additional disclosures as per SEBI regulations.\n\n**Step 2: Extract Core Financial Metrics**\n\n1. Revenue from operations\n   - Look for: \"Revenue from operations\"\n   - Location in document: Statement of unaudited consolidated financial results\n   - Value found: 3130.47 (in crores)\n\n2. Net profit for the period\n   - Look for: \"Net profit for the period/year\"\n   - Location: Statement of unaudited consolidated financial results\n   - Value: 456.61 (in crores)\n\n3. Basic Earnings per share\n   - Look for: \"Basic EPS\"\n   - Location: Statement of unaudited consolidated financial results\n   - Value: 2.62 (in rupees)\n\n4. Total assets\n   - Look for: \"Total assets\"\n   - Location: Segment-wise revenue and results (under \"Segment assets\")\n   - Value: 14344.60 (in crores)\n\n5. Total liabilities\n   - Look for: \"Total liabilities\"\n   - Location: Segment-wise revenue and results (under \"Segment liabilities\")\n   - Value: 4452.47 (in crores)\n\n6. Margins (if calculable or stated)\n   - Operating Margin: 19.32% (calculated from \"Profit before tax, finance cost, depreciation and amortisation expense, exceptional items and Share of loss in Joint venture\" and \"Revenue from operations\")\n\n7. Business segment metrics (if available)\n   - Consumer care business revenue: 2391.44 (in crores)\n   - Food business revenue: 668.75 (in crores)\n\n**Step 3: Verify and Cross-check**\nThe numbers appear to be logically consistent, and units are consistent throughout the document. However, it's essential to note that the document is for the quarter ended June 30, 2023, not Q1 2024 as initially stated.\n\n**Step 4: Final Output**\nHere is the extracted data in JSON format:\n\n```json",
+  "extraction": {
+    "company": "DABUR",
+    "quarter": "Q1",
+    "year": 2023,
+    "reasoning": {
+      "document_type": "Quarterly financial results statement",
+      "key_sections_found": [
+        "Statement of unaudited consolidated financial results",
+        "Segment-wise revenue and results"
+      ],
+      "confidence": "high"
+    },
+    "metrics": {
+      "revenue_from_operations": {
+        "value": 3130.47,
+        "unit": "crores",
+        "source": "Statement of unaudited consolidated financial results"
+      },
+      "net_profit": {
+        "value": 456.61,
+        "unit": "crores",
+        "source": "Statement of unaudited consolidated financial results"
+      },
+      "basic_eps": {
+        "value": 2.62,
+        "unit": "rupees",
+        "source": "Statement of unaudited consolidated financial results"
+      },
+      "total_assets": {
+        "value": 14344.6,
+        "unit": "crores",
+        "source": "Segment-wise revenue and results"
+      },
+      "total_liabilities": {
+        "value": 4452.47,
+        "unit": "crores",
+        "source": "Segment-wise revenue and results"
+      },
+      "operating_margin": {
+        "value": 19.32,
+        "unit": "%",
+        "source": "Calculated from Statement of unaudited consolidated financial results"
+      },
+      "consumer_care_business_revenue": {
+        "value": 2391.44,
+        "unit": "crores",
+        "source": "Segment-wise revenue and results"
+      },
+      "food_business_revenue": {
+        "value": 668.75,
+        "unit": "crores",
+        "source": "Segment-wise revenue and results"
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 6594,
+    "completion_tokens": 821,
+    "total_tokens": 7415,
+    "cost_usd": 0.00453905,
+    "latency_seconds": 37.546937
+  }
+}

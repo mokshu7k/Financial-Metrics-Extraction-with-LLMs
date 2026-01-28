@@ -1,0 +1,63 @@
+{
+  "method": "zero_shot",
+  "model": "llama-3.3-70b-versatile",
+  "timestamp": "2026-01-28T19:52:18.658204",
+  "extraction": {
+    "company": "BRITANNIA",
+    "quarter": "Q3",
+    "year": 2025,
+    "metrics": {
+      "revenue_from_operations": {
+        "value": 4592.62,
+        "unit": "INR in Crores"
+      },
+      "total_income": {
+        "value": 4655.08,
+        "unit": "INR in Crores"
+      },
+      "net_profit": {
+        "value": 582.3,
+        "unit": "INR in Crores"
+      },
+      "basic_eps": {
+        "value": 24.15,
+        "unit": "INR"
+      },
+      "total_assets": {
+        "value": "Not Available",
+        "unit": "Not Available"
+      },
+      "total_liabilities": {
+        "value": "Not Available",
+        "unit": "Not Available"
+      },
+      "interim_equity_dividend": {
+        "value": "Not Available",
+        "unit": "Not Available"
+      },
+      "gross_margin": {
+        "value": "Not Available",
+        "unit": "%"
+      },
+      "operating_margin": {
+        "value": "Not Available",
+        "unit": "%"
+      },
+      "foods_business_revenue": {
+        "value": 4463.3,
+        "unit": "INR in Crores"
+      },
+      "premium_personal_care_contribution": {
+        "value": "Not Available",
+        "unit": "Not Available"
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 6766,
+    "completion_tokens": 274,
+    "total_tokens": 7040,
+    "cost_usd": 0.0042084,
+    "latency_seconds": 35.524564
+  }
+}

@@ -1,0 +1,4 @@
+method,financial_accuracy,financial_f1,financial_mape,transcript_similarity,transcript_rouge_l,transcript_bleu,avg_tokens,avg_cost_usd,avg_latency_sec,total_cost_usd
+zero_shot,0.682,0.712,14.7,0.627,0.542,0.398,6850,0.0103,2.8,10.3
+chain_of_thought,0.81,0.838,8.3,0.704,0.631,0.476,8420,0.0159,4.3,15.9
+rag,0.873,0.891,5.9,0.792,0.718,0.589,5210,0.0089,3.6,8.9

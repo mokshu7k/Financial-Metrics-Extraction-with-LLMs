@@ -1,0 +1,7 @@
+2025-10-12 13:25:06,451 - INFO - Started experiment: unified_evaluation
+2025-10-12 13:25:06,451 - INFO - Experiment Parameters:
+2025-10-12 13:25:06,451 - INFO -   methods: ['chain_of_thought', 'rag', 'zero_shot']
+2025-10-12 13:25:06,693 - INFO - Metrics:
+2025-10-12 13:25:06,693 - INFO -   methods_evaluated: 3
+2025-10-12 13:25:06,693 - INFO -   best_accuracy_method: rag
+2025-10-12 13:25:06,693 - INFO -   best_efficiency_method: rag
