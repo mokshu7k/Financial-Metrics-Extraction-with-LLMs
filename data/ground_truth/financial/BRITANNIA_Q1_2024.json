@@ -1,0 +1,19 @@
+{
+    "document_type": "financial",
+    "company": "Britannia Industries Limited",
+    "quarter": "Q1",
+    "year": 2024,
+    "metrics": {
+        "revenue_from_operations": 4010.70,
+        "total_income": 4064.63,
+        "net_profit": 455.45,
+        "basic_eps": 19.00,
+        "total_assets": "Not Available",
+        "total_liabilities": "Not Available",
+        "interim_equity_dividend": "Not Available",
+        "gross_margin": 48.1,
+        "operating_margin": 15.49,
+        "foods_business_revenue": 4010.70,
+        "premium_personal_care_contribution": "Not Available"
+    }
+}

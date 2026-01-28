@@ -35,6 +35,7 @@ setup(
         "api": [
             "openai>=1.0.0",
             "anthropic>=0.3.0",
+            "groq>=0.4.0"
         ],
     },
     classifiers=[

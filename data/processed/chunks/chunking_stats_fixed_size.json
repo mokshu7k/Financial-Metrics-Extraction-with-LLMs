@@ -1,0 +1,31 @@
+{
+  "total_chunks": 1501,
+  "chunk_types": {
+    "fixed_size": 1501
+  },
+  "document_types": {
+    "transcript": 844,
+    "financial": 657
+  },
+  "companies": {
+    "DABUR": 767,
+    "BRITANNIA": 734
+  },
+  "years": [
+    2024,
+    2025
+  ],
+  "token_statistics": {
+    "mean": 246.11792138574285,
+    "median": 248.0,
+    "min": 49,
+    "max": 249,
+    "std": 15.707707830122203
+  },
+  "financial_data_chunks": 1243,
+  "section_types": {
+    "financial_metrics": 221,
+    "management_discussion": 208,
+    "qa_session": 54
+  }
+}

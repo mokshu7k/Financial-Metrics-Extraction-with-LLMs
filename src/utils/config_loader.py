@@ -13,7 +13,7 @@ class ConfigLoader:
     Load and manage configuration from YAML file with environment variable support.
     """
 
-    def __init__(self, config_path: str = "configs/config.yaml"):
+    def __init__(self, config_path: str = "config.yaml"):
         self.config_path = Path(config_path)
         self.config = self._load_config()
         self._resolve_env_variables()
@@ -25,9 +25,9 @@ class ConfigLoader:
             return self._get_default_config()
         
         try:
-            with open(self.config_path, 'r'):
+            with open(self.config_path, 'r') as f:  # Fixed: was missing 'f' variable
                 config = yaml.safe_load(f)
-            logger.infor(f"Loaded configuration from {self.config_path}")
+            logger.info(f"Loaded configuration from {self.config_path}")
             return config
         except Exception as e:
             logger.error(f"Error loading config: {e}")
@@ -42,20 +42,35 @@ class ConfigLoader:
                 'raw_data': 'data/raw',
                 'processed_data': 'data/processed',
                 'embeddings': 'data/embeddings',
-                'results': 'results'
+                'results': 'results',
+                'logs': 'results/logs'
             },
             'preprocessing': {
                 'chunking': {
                     'default_strategy': 'fixed_size',
                     'chunk_size': 1000,
-                    'chunk_overlap': 200
+                    'chunk_overlap': 200,
+                    'min_chunk_size': 100
                 }
             },
             'embeddings': {
                 'model': {
                     'name': 'all-MiniLM-L6-v2',
-                    'dimension': 384
+                    'dimension': 384,
+                    'normalize': True,
+                    'batch_size': 32,
+                    'device': 'cpu'
                 }
+            },
+            'vector_store': {
+                'backend': 'faiss',
+                'index_type': 'flat',
+                'similarity_metric': 'cosine'
+            },
+            'logging': {
+                'level': 'INFO',
+                'file': 'results/logs/pipeline.log',
+                'console': True
             }
         }
     
@@ -96,7 +111,7 @@ class ConfigLoader:
             
         return value
     
-    def set(self, key_path:str, value: Any):
+    def set(self, key_path: str, value: Any):
         """
         Set configuration value using dot notation.
 
@@ -120,23 +135,23 @@ class ConfigLoader:
         path = Path(output_path) if output_path else self.config_path
 
         with open(path, 'w') as f:
-            yaml.dump(self.config, f, default_flow_style = False, indent = 2)
+            yaml.dump(self.config, f, default_flow_style=False, indent=2)
 
-        def to_dict(self) -> Dict[str, Any]:
-            """Return configuration as dictionary."""
-            return self.config.copy()
-        
-    def load_config(config_path: str = "configs/config.yaml") -> Dict[str,Any]:
-        """
-        Convenience function to load configuration.
+    def to_dict(self) -> Dict[str, Any]:
+        """Return configuration as dictionary."""
+        return self.config.copy()
 
-        Args:
-            config_path: Path to config file
 
-        Returns:
-            Configuration dictionary
-        """
+def load_config(config_path: str = "config.yaml") -> Dict[str, Any]:
+    """
+    Convenience function to load configuration.
 
-        loader = ConfigLoader(config_path)
-        return loader.to_dict()
-    
+    Args:
+        config_path: Path to config file
+
+    Returns:
+        Configuration dictionary
+    """
+
+    loader = ConfigLoader(config_path)
+    return loader.to_dict()

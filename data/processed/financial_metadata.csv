@@ -1,0 +1,17 @@
+company,quarter,year,document_type,file_path,text_length,processing_timestamp
+BRITANNIA,Q1,2024,financial,data\raw\financial\BRITANNIA q1 2024.pdf,36706,2026-01-28 18:36:38
+BRITANNIA,Q1,2025,financial,data\raw\financial\BRITANNIA q1 2025.pdf,27637,2026-01-28 18:36:41
+BRITANNIA,Q2,2024,financial,data\raw\financial\BRITANNIA q2 2024.pdf,48338,2026-01-28 18:36:47
+BRITANNIA,Q2,2025,financial,data\raw\financial\BRITANNIA q2 2025.pdf,41769,2026-01-28 18:36:52
+BRITANNIA,Q3,2024,financial,data\raw\financial\BRITANNIA q3 2024.pdf,40740,2026-01-28 18:36:56
+BRITANNIA,Q3,2025,financial,data\raw\financial\BRITANNIA q3 2025.pdf,30274,2026-01-28 18:36:59
+BRITANNIA,Q4,2024,financial,data\raw\financial\BRITANNIA q4 2024.pdf,67837,2026-01-28 18:37:05
+BRITANNIA,Q4,2025,financial,data\raw\financial\BRITANNIA q4 2025.pdf,54957,2026-01-28 18:37:10
+DABUR,Q1,2024,financial,data\raw\financial\DABUR q1 2024.pdf,30096,2026-01-28 18:37:13
+DABUR,Q1,2025,financial,data\raw\financial\DABUR q1 2025.pdf,30565,2026-01-28 18:37:16
+DABUR,Q2,2024,financial,data\raw\financial\DABUR q2 2024.pdf,42616,2026-01-28 18:37:18
+DABUR,Q2,2025,financial,data\raw\financial\DABUR q2 2025.pdf,43845,2026-01-28 18:37:21
+DABUR,Q3,2024,financial,data\raw\financial\DABUR q3 2024.pdf,33178,2026-01-28 18:37:23
+DABUR,Q3,2025,financial,data\raw\financial\DABUR q3 2025.pdf,34607,2026-01-28 18:37:25
+DABUR,Q4,2024,financial,data\raw\financial\DABUR q4 2024.pdf,28653,2026-01-28 18:37:28
+DABUR,Q4,2025,financial,data\raw\financial\DABUR q4 2025.pdf,54253,2026-01-28 18:37:31

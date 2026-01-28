@@ -191,7 +191,13 @@ def calculate_cost(
         'gpt-4': {'prompt': 0.03 / 1000, 'completion': 0.06 / 1000},
         'gpt-4-turbo': {'prompt': 0.01 / 1000, 'completion': 0.03 / 1000},
         'claude-3-sonnet': {'prompt': 0.003 / 1000, 'completion': 0.015 / 1000},
-        'claude-3-opus': {'prompt': 0.015 / 1000, 'completion': 0.075 / 1000}
+        'claude-3-opus': {'prompt': 0.015 / 1000, 'completion': 0.075 / 1000},
+        'llama-3.3-70b-versatile': {'prompt': 0.00059 / 1000, 'completion': 0.00079 / 1000},
+        'llama-3.1-70b-versatile': {'prompt': 0.00059 / 1000, 'completion': 0.00079 / 1000},
+        'llama-3.1-8b-instant': {'prompt': 0.00005 / 1000, 'completion': 0.00008 / 1000},
+        'mixtral-8x7b-32768': {'prompt': 0.00024 / 1000, 'completion': 0.00024 / 1000},
+        'gemma-7b-it': {'prompt': 0.00007 / 1000, 'completion': 0.00007 / 1000},
+        'gemma2-9b-it': {'prompt': 0.0002 / 1000, 'completion': 0.0002 / 1000},
     }
     
     if model not in pricing:

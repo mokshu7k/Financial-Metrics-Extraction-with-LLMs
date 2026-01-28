@@ -1,0 +1,26 @@
+{
+  "processing_timestamp": "2026-01-28 18:38:24",
+  "summary": {
+    "financial_documents": 16,
+    "transcript_documents": 16,
+    "total_documents": 32
+  },
+  "companies_processed": [
+    "BRITANNIA",
+    "DABUR"
+  ],
+  "year_range": {
+    "min": 2024,
+    "max": 2025
+  },
+  "data_quality": {
+    "financial": {
+      "average_text_length": 40379.4375,
+      "documents_with_sections": 0
+    },
+    "transcript": {
+      "average_text_length": 52204.625,
+      "documents_with_sections": 4
+    }
+  }
+}

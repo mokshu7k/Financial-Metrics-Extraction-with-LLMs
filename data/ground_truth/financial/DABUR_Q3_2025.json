@@ -1,0 +1,19 @@
+{
+    "document_type": "financial",
+    "company": "Dabur India Limited",
+    "quarter": "Q3",
+    "year": 2025,
+    "metrics": {
+        "revenue_from_operations": 3355.25,
+        "total_income": 3483.28,
+        "net_profit": 522.38,
+        "basic_eps": 2.95,
+        "total_assets": 16113.11,
+        "total_liabilities": 16113.11,
+        "interim_equity_dividend": 2.75,
+        "gross_margin": 53.05,
+        "operating_margin": 20.32,
+        "foods_business_revenue": 429.55,
+        "premium_personal_care_contribution": "Not Available"
+    }
+}

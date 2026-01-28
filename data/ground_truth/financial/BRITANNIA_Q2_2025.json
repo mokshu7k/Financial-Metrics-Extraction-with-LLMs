@@ -1,0 +1,19 @@
+{
+    "document_type": "financial",
+    "company": "Britannia Industries Limited",
+    "quarter": "Q2",
+    "year": 2025,
+    "metrics": {
+        "revenue_from_operations": 4566.00,
+        "total_income": 4611.75,
+        "net_profit": 531.55,
+        "basic_eps": 22.06,
+        "total_assets": 9466.73,
+        "total_liabilities": 9466.73,
+        "interim_equity_dividend": "Not Available",
+        "gross_margin": 44.80,
+        "operating_margin": 15.5,
+        "foods_business_revenue": 4566.00,
+        "premium_personal_care_contribution": "Not Available"
+    }
+}

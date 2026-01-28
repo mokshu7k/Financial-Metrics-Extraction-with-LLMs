@@ -9,11 +9,7 @@ env/
 # 2. Data
 # Raw data, processed data, and ground truth files.
 # It's generally best not to commit large datasets or sensitive financial data.
-data/
-datasets/
-transcripts/
-ground_truth.json
-ground_truth.csv
+
 
 
 simple_chat.py
@@ -25,6 +21,7 @@ simple_chat.py
 config.json
 secrets.py
 api_keys.json
+
 
 # 4. Python-specific files
 # Byte-compiled and temporary files
@@ -75,3 +72,4 @@ build/
 
 # 11. Practice
 Practice/
+results

@@ -1,14 +1,15 @@
+# src/utils/logger.py - FIXED VERSION
+
 import logging 
 import sys
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
-import os
 
 def setup_logging(
-        level:str = "INFO",
+        level: str = "INFO",
         log_file: Optional[str] = None,
-        console : bool = True,
+        console: bool = True,
         format_string: Optional[str] = None
 ) -> logging.Logger:
     """
@@ -24,7 +25,6 @@ def setup_logging(
         Configured root logger
     """
     # Convert string level to logging constant
-    # getattr(obj, name, default)
     numeric_level = getattr(logging, level.upper(), logging.INFO)
 
     if format_string is None:
@@ -39,11 +39,11 @@ def setup_logging(
     # Remove existing handlers
     root_logger.handlers = []
 
-    # Console handler
+    # Console handler - BUG WAS HERE
     if console:
         console_handler = logging.StreamHandler(sys.stdout)
         console_handler.setLevel(numeric_level)
-        console_handler.setFormatter(format_string)
+        console_handler.setFormatter(formatter)  # Fixed: was format_string, should be formatter
         root_logger.addHandler(console_handler)
 
     # File handler
@@ -51,14 +51,14 @@ def setup_logging(
         log_path = Path(log_file)
         log_path.parent.mkdir(parents=True, exist_ok=True)
 
-        file_handler = logging.FileHandler(log_file, mode= 'a', encoding='utf-8')
-        file_handler.setFormatter(format_string)
+        file_handler = logging.FileHandler(log_file, mode='a', encoding='utf-8')
+        file_handler.setFormatter(formatter)  # Fixed: was format_string, should be formatter
         file_handler.setLevel(numeric_level)
         root_logger.addHandler(file_handler)
 
     return root_logger
 
-def get_logger(name: str, level:Optional[str] = None) -> logging.Logger:
+def get_logger(name: str, level: Optional[str] = None) -> logging.Logger:
     """
     Get a logger with a specific name.
 
@@ -69,7 +69,6 @@ def get_logger(name: str, level:Optional[str] = None) -> logging.Logger:
     Returns:
         Configured logger
     """
-
     logger = logging.getLogger(name)
 
     if level:
@@ -88,7 +87,7 @@ class ExperimentLogger:
 
         # Create experiment-specific log file
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        log_file = self.log_dir /f"{experiment_name}_{timestamp}.log"
+        log_file = self.log_dir / f"{experiment_name}_{timestamp}.log"
         
         self.logger = logging.getLogger(f"experiment.{experiment_name}")
         self.logger.setLevel(logging.DEBUG)
@@ -105,7 +104,7 @@ class ExperimentLogger:
     def log_parameters(self, params: dict):
         """Log experiment parameters."""
         self.logger.info("Experiment Parameters:")
-        for key, value, in params.items():
+        for key, value in params.items():  # Fixed: was params.items() with comma
             self.logger.info(f"  {key}: {value}")
 
     def log_metrics(self, metrics: dict, step: Optional[int] = None):
